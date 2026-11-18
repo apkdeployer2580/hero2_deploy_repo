@@ -1,0 +1,18 @@
+# 의상 208 — 「순백의 해머」 (Claude 초안 2026-10-09, tools_re/costume_draft_hammer.py) — 가디언 모드 클리어 보상 (난이도 NORMAL
+# 이상으로 그 회차 진행도의 95 % 이상, avatar_state::CLEAR_REWARDS). 사용자가 준 그림 2: 하얀 보닛 · 백금빛 긴 머리 · 회색 블라우스와
+# 주름 치마 · 맨발 · 거대한 망치. 이름은 Claude 가 정했다(확인 대기). 나이트 방패는 없다(그림에 없다).
+set                   = 순백의 해머
+head                  = 순백의 해머-보닛
+head.desc             = 리본을 맨 하얀 보닛
+armor                 = 순백의 해머-블라우스
+armor.desc            = 어깨를 드러낸 블라우스
+shoes                 = 순백의 해머-주름 치마
+shoes.desc            = 회색 주름 치마와 맨발
+weapon.berserker      = 순백의 해머-거대 망치
+weapon.berserker.desc = 몸집보다 큰 쇠망치
+weapon.knight         = 순백의 해머-쇠망치
+weapon.knight.desc    = 한 손으로 쥐는 쇠망치
+weapon.rogue          = 순백의 해머-작은 망치
+weapon.rogue.desc     = 오른손에 쥐는 작은 망치
+offhand.rogue         = 순백의 해머-작은 망치
+offhand.rogue.desc    = 왼손에 쥐는 작은 망치

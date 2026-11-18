@@ -1,0 +1,247 @@
+{
+  "probe_sha256": "1fc452fc2a66c947d79d1048616be4fcd3982f76aaf2a486b89126d707a6a418",
+  "asset_sha256": "cd345dc0b1d2c61cbe22014ee4918ab7f53cfb295403e458c95cf860ab292950",
+  "frames": 1000,
+  "trials": 1,
+  "level": 99,
+  "scenario": "guardian_forest_normal_fixed_rotation",
+  "limitation": "장비 교체 비교. 장비 옵션 난수 및 중력 가방 개수는 로그를 함께 확인할 것. 레이드 및 이동 검증 아님.",
+  "results": [
+    {
+      "baseline": "버서커 반격태세",
+      "label": "반격태세 심연 교체",
+      "slots": {
+        "w": [
+          0,
+          36
+        ],
+        "h": [
+          5,
+          33
+        ],
+        "a": [
+          6,
+          53
+        ],
+        "g": [
+          8,
+          55
+        ],
+        "s": [
+          9,
+          56
+        ],
+        "acc": [
+          11,
+          21
+        ]
+      },
+      "single": {
+        "stats": [
+          628,
+          269,
+          9,
+          3307,
+          984
+        ],
+        "dps": 2786.053412462908,
+        "window_dps": 938.9,
+        "dmg": 18778,
+        "kills": 0,
+        "hp0": 3307,
+        "hp_min": 0,
+        "died": 6.74,
+        "clear_s": null,
+        "elapsed_s": 6.74,
+        "targets": 1,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            600000,
+            600000
+          ]
+        ],
+        "log": "target/audit85_swaps\\run_반격태세_심연_교체_one.log"
+      },
+      "pack": {
+        "stats": [
+          628,
+          269,
+          9,
+          3307,
+          984
+        ],
+        "dps": 2732.780082987552,
+        "window_dps": 658.6,
+        "dmg": 13172,
+        "kills": 2,
+        "hp0": 3307,
+        "hp_min": 0,
+        "died": 4.82,
+        "clear_s": null,
+        "elapsed_s": 4.82,
+        "targets": 8,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            5997,
+            5997
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5967,
+            5967
+          ]
+        ],
+        "log": "target/audit85_swaps\\run_반격태세_심연_교체_pack.log"
+      }
+    },
+    {
+      "baseline": "로그 살상연희 D",
+      "label": "살상연희 중력 교체",
+      "slots": {
+        "w": [
+          3,
+          35
+        ],
+        "w2": [
+          3,
+          36
+        ],
+        "h": [
+          5,
+          36
+        ],
+        "a": [
+          6,
+          60
+        ],
+        "g": [
+          8,
+          58
+        ],
+        "s": [
+          9,
+          59
+        ],
+        "acc": [
+          11,
+          20
+        ]
+      },
+      "single": {
+        "stats": [
+          286,
+          265,
+          80,
+          2326,
+          654
+        ],
+        "dps": 10383.15,
+        "window_dps": 10383.15,
+        "dmg": 207663,
+        "kills": 0,
+        "hp0": 2326,
+        "hp_min": 1633,
+        "died": null,
+        "clear_s": null,
+        "elapsed_s": 20.0,
+        "targets": 1,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            600000,
+            600000
+          ]
+        ],
+        "log": "target/audit85_swaps\\run_살상연희_중력_교체_one.log"
+      },
+      "pack": {
+        "stats": [
+          286,
+          265,
+          80,
+          2326,
+          654
+        ],
+        "dps": 15915.8940397351,
+        "window_dps": 2403.3,
+        "dmg": 48066,
+        "kills": 8,
+        "hp0": 2326,
+        "hp_min": 2326,
+        "died": null,
+        "clear_s": 3.02,
+        "elapsed_s": 3.02,
+        "targets": 8,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            5997,
+            5997
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5967,
+            5967
+          ]
+        ],
+        "log": "target/audit85_swaps\\run_살상연희_중력_교체_pack.log"
+      }
+    }
+  ]
+}

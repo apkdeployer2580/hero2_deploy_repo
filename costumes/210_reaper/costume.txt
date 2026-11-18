@@ -1,0 +1,20 @@
+# 의상 210 — 「백은의 사신」 (Claude 초안 2026-10-09, tools_re/costume_draft_reaper.py) — HELL 모드 클리어 보상 (난이도 HARD 이상으로
+# 그 회차 진행도의 95 % 이상, avatar_state::CLEAR_REWARDS · 가디언 클리어도 HELL HARD 클리어로 친다). 사용자가 준 그림 4: 은빛 긴 머리와
+# 푸른 꽃 · 금장식 상의 · 푸른 소매 · 트인 회색 긴 치마 · 맨발 · 거대한 검은 낫. 이름은 Claude 가 정했다(확인 대기). 나이트 방패는 없다.
+# ★ 2026-10-09 (사용자): 신발 = 금 발찌 → 하얀 스타킹. 드레스의 치마는 층(skirtunder · skirtover) — 다른 신발을 신으면 그 다리가 보인다.
+# ★ 2026-10-10 (사용자): 흰 스타킹 + 흰 구두 + 흰 팬티 — 스타킹만 살색을 더 섞는다(tools_re/costume_geometry.py MATERIALS[210]).
+set                   = 백은의 사신
+head                  = 백은의 사신-머리
+head.desc             = 푸른 꽃을 꽂은 은발
+armor                 = 백은의 사신-드레스
+armor.desc            = 금장식 상의와 회색 치마
+shoes                 = 백은의 사신-하얀 스타킹
+shoes.desc            = 흰 스타킹과 흰 구두
+weapon.berserker      = 백은의 사신-거대한 낫
+weapon.berserker.desc = 검은 기운이 서린 큰 낫
+weapon.knight         = 백은의 사신-검은 낫
+weapon.knight.desc    = 칠흑의 날을 지닌 낫
+weapon.rogue          = 백은의 사신-작은 낫
+weapon.rogue.desc     = 오른손에 쥐는 작은 낫
+offhand.rogue         = 백은의 사신-작은 낫
+offhand.rogue.desc    = 왼손에 쥐는 작은 낫

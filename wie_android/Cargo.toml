@@ -1,0 +1,93 @@
+[package]
+name = "wie_android"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+# GameActivity loads System.loadLibrary("main") -> the cdylib must be libmain.so.
+name = "main"
+crate-type = ["cdylib"]
+path = "src/lib.rs"
+
+[dependencies]
+# The host panels' typeface (`src/hostfont.rs`). Already in the tree — `wie_backend`
+# rasterises GUEST text with the same crate and the same bundled neodgm.ttf — so this
+# adds no lock entry. `libm` + no default features because the core resolves it that
+# way and a second feature set would rebuild it.
+ab_glyph = { version = "^0.2", features = ["libm"], default-features = false }
+# `release_max_level_info` compiles out every `log::debug!`/`trace!` in the whole
+# dependency graph in release builds — including arm32_cpu's per-instruction
+# tracer's residue and the thousands of debug events in the WIPI layer. Without
+# it each of those still costs an atomic level load + branch at runtime.
+# Level INFO, not WARN: the app's own diagnostics go through `log::info!` and the
+# build script filters with `warn,main=info`.
+log = { version = "^0.4", features = ["release_max_level_info"] }
+async-trait = { version = "^0.1" }
+# Enable tracing's `log` feature so the wie core's tracing events (which
+# otherwise vanish — we set no tracing Subscriber) surface through android_logger
+# to logcat. Diagnostic: lets us see wie-internal errors (e.g. during save load).
+# `release_max_level_info` is the tracing-side twin of the `log` feature above:
+# the wie core emits its per-call WIPI events with `tracing::debug!`, and via the
+# `log` bridge each one was being formatted and thrown away at runtime.
+tracing = { version = "^0.1", features = ["log", "release_max_level_info"] }
+
+# Render path (ported from wie_cli/window.rs). winit brings android-activity
+# (GameActivity) transitively; do NOT depend on android-activity directly.
+winit = { version = "^0.30", features = ["android-game-activity"] }
+softbuffer = { version = "^0.4" }
+
+# Audio (ported from wie_cli/audio_sink.rs). rodio -> cpal -> AAudio on Android.
+# `playback` gives the output device/Player; SamplesBuffer/conversions are core.
+# default-features off avoids pulling the symphonia decoder stack we don't use.
+rodio = { version = "^0.22", default-features = false, features = ["playback"] }
+# Software SoundFont synth for MIDI BGM (Hero3 audio is 100% MIDI/SMAF — no PCM).
+# oxisynth is the only pure-Rust synth that loads SF3 (Vorbis-compressed) fonts
+# like GeneralUser.sf3; the `sf3` feature pulls the pure-Rust `lewton` decoder.
+oxisynth = { version = "0.1", features = ["sf3"] }
+# ★ 2026-10-09 the awakenings' voices (`src/voice.rs`, Ogg Vorbis): the decoder oxisynth's `sf3` already pulls in —
+# same version, same (default = `ogg`) features, so no new crate in the lock.
+lewton = { version = "0.10" }
+
+# wie core (same git dep as wie_web -> reuses the existing cargo checkout; the
+# workspace [patch] overrides arm32_cpu with the perf fork under vendor/).
+wie_backend = { git = "https://github.com/dlunch/wie.git" }
+wie_ktf = { git = "https://github.com/dlunch/wie.git" }
+wie_lgt = { git = "https://github.com/dlunch/wie.git" }
+wie_skt = { git = "https://github.com/dlunch/wie.git" }
+wie_j2me = { git = "https://github.com/dlunch/wie.git" }
+wie_util = { git = "https://github.com/dlunch/wie.git" }
+
+# ★ 2026-10-02 세이브 옮기기 (`src/save_transfer.rs`): the transfer file a player sends between
+# phones is a plain zip a PC can open. The same version and features `wie_backend` already
+# builds, so this adds no crate to the lock and no second feature set.
+zip = { version = "^8.6", features = ["deflate"], default-features = false }
+
+# --- TLS for the private-server connection (Track C, 2026-07-31) -------------
+# The private server is on the public internet and the 16-byte account id is a
+# BEARER credential (see hero3_server/threat_demo.py: knowing it IS being the
+# account), so the transport has to stop it being harvested off the wire. The
+# original game speaks plain TCP and knows nothing about TLS — we can wrap it
+# because OUR layer owns the socket (network.rs), not the guest.
+#
+# `ring` rather than the default aws-lc-rs provider: aws-lc-rs needs cmake+nasm
+# at build time, which the cargo-ndk cross-compile does not have, while ring
+# ships prebuilt asm for aarch64-linux-android.
+rustls = { version = "^0.23", default-features = false, features = ["ring", "std", "tls12", "logging"] }
+rustls-pki-types = { version = "^1" }
+# Bundled Mozilla root store, so a normal (Let's Encrypt) certificate validates
+# with no OS trust-store plumbing. Self-signed deployments use the pin instead.
+webpki-roots = { version = "^0.26" }
+# SHA-256 for the certificate pin. `ring` is already in the tree via rustls.
+ring = { version = "^0.17" }
+
+[target.'cfg(target_os = "android")'.dependencies]
+android_logger = { version = "^0.15" }
+# ndk 0.9 matches what winit/android-activity/cpal already resolve; used for the
+# AssetManager returned by AndroidApp::asset_manager() (bundled game zip).
+ndk = { version = "^0.9" }
+# JNI call to Activity.setRequestedOrientation() for the portrait/landscape
+# toggle. ndk-context (populated by android-activity before android_main) hands
+# us the JavaVM + Activity jobject.
+jni = { version = "^0.21" }
+ndk-context = { version = "^0.1" }

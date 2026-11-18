@@ -1,0 +1,1343 @@
+{
+  "probe_sha256": "1fc452fc2a66c947d79d1048616be4fcd3982f76aaf2a486b89126d707a6a418",
+  "frames": 1000,
+  "trials_per_build": 1,
+  "scenario": "guardian_forest_normal_fixed_rotation",
+  "results": [
+    [
+      "버서커 1차",
+      {
+        "stats": [
+          628,
+          258,
+          9,
+          3307,
+          984
+        ],
+        "dps": 4203.4,
+        "window_dps": 4203.4,
+        "dmg": 84068,
+        "kills": 0,
+        "hp0": 3307,
+        "hp_min": 2398,
+        "died": null,
+        "clear_s": null,
+        "elapsed_s": 20.0,
+        "targets": 1,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            600000,
+            600000
+          ]
+        ],
+        "log": "target/audit85_runs\\run_버서커_1차_one.log"
+      },
+      {
+        "stats": [
+          628,
+          258,
+          9,
+          3307,
+          984
+        ],
+        "dps": 3697.994269340974,
+        "window_dps": 1290.6,
+        "dmg": 25812,
+        "kills": 4,
+        "hp0": 3307,
+        "hp_min": 0,
+        "died": 6.98,
+        "clear_s": null,
+        "elapsed_s": 6.98,
+        "targets": 8,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            5997,
+            5997
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5967,
+            5967
+          ]
+        ],
+        "log": "target/audit85_runs\\run_버서커_1차_pack.log"
+      }
+    ],
+    [
+      "버서커 격분 A",
+      {
+        "stats": [
+          628,
+          264,
+          9,
+          2148,
+          1314
+        ],
+        "dps": 12611.034482758621,
+        "window_dps": 1828.6,
+        "dmg": 36572,
+        "kills": 0,
+        "hp0": 2148,
+        "hp_min": 0,
+        "died": 2.9,
+        "clear_s": null,
+        "elapsed_s": 2.9,
+        "targets": 1,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            600000,
+            600000
+          ]
+        ],
+        "log": "target/audit85_runs\\run_버서커_격분_A_one.log"
+      },
+      {
+        "stats": [
+          628,
+          264,
+          9,
+          2148,
+          1314
+        ],
+        "dps": 5020.3488372093025,
+        "window_dps": 863.5,
+        "dmg": 17270,
+        "kills": 2,
+        "hp0": 2148,
+        "hp_min": 0,
+        "died": 3.44,
+        "clear_s": null,
+        "elapsed_s": 3.44,
+        "targets": 8,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            5997,
+            5997
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5967,
+            5967
+          ]
+        ],
+        "log": "target/audit85_runs\\run_버서커_격분_A_pack.log"
+      }
+    ],
+    [
+      "버서커 폭풍강타",
+      {
+        "stats": [
+          623,
+          263,
+          9,
+          3307,
+          978
+        ],
+        "dps": 4554.526534859521,
+        "window_dps": 4376.9,
+        "dmg": 87538,
+        "kills": 0,
+        "hp0": 3307,
+        "hp_min": 0,
+        "died": 19.22,
+        "clear_s": null,
+        "elapsed_s": 19.22,
+        "targets": 1,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            600000,
+            600000
+          ]
+        ],
+        "log": "target/audit85_runs\\run_버서커_폭풍강타_one.log"
+      },
+      {
+        "stats": [
+          623,
+          263,
+          9,
+          3307,
+          978
+        ],
+        "dps": 5687.425149700599,
+        "window_dps": 1899.6,
+        "dmg": 37992,
+        "kills": 6,
+        "hp0": 3307,
+        "hp_min": 0,
+        "died": 6.68,
+        "clear_s": null,
+        "elapsed_s": 6.68,
+        "targets": 8,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            5997,
+            5997
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5967,
+            5967
+          ]
+        ],
+        "log": "target/audit85_runs\\run_버서커_폭풍강타_pack.log"
+      }
+    ],
+    [
+      "버서커 반격태세",
+      {
+        "stats": [
+          628,
+          269,
+          9,
+          2758,
+          984
+        ],
+        "dps": 3955.862068965517,
+        "window_dps": 573.6,
+        "dmg": 11472,
+        "kills": 0,
+        "hp0": 2758,
+        "hp_min": 0,
+        "died": 2.9,
+        "clear_s": null,
+        "elapsed_s": 2.9,
+        "targets": 1,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            600000,
+            600000
+          ]
+        ],
+        "log": "target/audit85_runs\\run_버서커_반격태세_one.log"
+      },
+      {
+        "stats": [
+          628,
+          269,
+          9,
+          2758,
+          984
+        ],
+        "dps": 3122.79792746114,
+        "window_dps": 602.7,
+        "dmg": 12054,
+        "kills": 2,
+        "hp0": 2758,
+        "hp_min": 0,
+        "died": 3.86,
+        "clear_s": null,
+        "elapsed_s": 3.86,
+        "targets": 8,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            5997,
+            5997
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5967,
+            5967
+          ]
+        ],
+        "log": "target/audit85_runs\\run_버서커_반격태세_pack.log"
+      }
+    ],
+    [
+      "나이트 1차",
+      {
+        "stats": [
+          389,
+          313,
+          17,
+          5585,
+          666
+        ],
+        "dps": 3105.9,
+        "window_dps": 3105.9,
+        "dmg": 62118,
+        "kills": 0,
+        "hp0": 5585,
+        "hp_min": 4234,
+        "died": null,
+        "clear_s": null,
+        "elapsed_s": 20.0,
+        "targets": 1,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            600000,
+            600000
+          ]
+        ],
+        "log": "target/audit85_runs\\run_나이트_1차_one.log"
+      },
+      {
+        "stats": [
+          389,
+          313,
+          17,
+          5585,
+          666
+        ],
+        "dps": 602.7,
+        "window_dps": 602.7,
+        "dmg": 12054,
+        "kills": 2,
+        "hp0": 5585,
+        "hp_min": 4242,
+        "died": null,
+        "clear_s": null,
+        "elapsed_s": 20.0,
+        "targets": 8,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            5997,
+            5997
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5967,
+            5967
+          ]
+        ],
+        "log": "target/audit85_runs\\run_나이트_1차_pack.log"
+      }
+    ],
+    [
+      "나이트 검기 K",
+      {
+        "stats": [
+          389,
+          324,
+          17,
+          4789,
+          666
+        ],
+        "dps": 3732.1016166281756,
+        "window_dps": 1616.0,
+        "dmg": 32320,
+        "kills": 0,
+        "hp0": 4789,
+        "hp_min": 0,
+        "died": 8.66,
+        "clear_s": null,
+        "elapsed_s": 8.66,
+        "targets": 1,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            600000,
+            600000
+          ]
+        ],
+        "log": "target/audit85_runs\\run_나이트_검기_K_one.log"
+      },
+      {
+        "stats": [
+          389,
+          324,
+          17,
+          4789,
+          666
+        ],
+        "dps": 602.7,
+        "window_dps": 602.7,
+        "dmg": 12054,
+        "kills": 2,
+        "hp0": 4789,
+        "hp_min": 1980,
+        "died": null,
+        "clear_s": null,
+        "elapsed_s": 20.0,
+        "targets": 8,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            5997,
+            5997
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5967,
+            5967
+          ]
+        ],
+        "log": "target/audit85_runs\\run_나이트_검기_K_pack.log"
+      }
+    ],
+    [
+      "나이트 방패치기",
+      {
+        "stats": [
+          395,
+          324,
+          17,
+          6989,
+          666
+        ],
+        "dps": 4358.567415730337,
+        "window_dps": 3103.3,
+        "dmg": 62066,
+        "kills": 0,
+        "hp0": 6989,
+        "hp_min": 0,
+        "died": 14.24,
+        "clear_s": null,
+        "elapsed_s": 14.24,
+        "targets": 1,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            600000,
+            600000
+          ]
+        ],
+        "log": "target/audit85_runs\\run_나이트_방패치기_one.log"
+      },
+      {
+        "stats": [
+          395,
+          324,
+          17,
+          6989,
+          666
+        ],
+        "dps": 602.7,
+        "window_dps": 602.7,
+        "dmg": 12054,
+        "kills": 2,
+        "hp0": 6989,
+        "hp_min": 3868,
+        "died": null,
+        "clear_s": null,
+        "elapsed_s": 20.0,
+        "targets": 8,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            5997,
+            5997
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5967,
+            5967
+          ]
+        ],
+        "log": "target/audit85_runs\\run_나이트_방패치기_pack.log"
+      }
+    ],
+    [
+      "나이트 발도 범위",
+      {
+        "stats": [
+          395,
+          324,
+          17,
+          4789,
+          666
+        ],
+        "dps": 3899.249061326658,
+        "window_dps": 3115.5,
+        "dmg": 62310,
+        "kills": 0,
+        "hp0": 4789,
+        "hp_min": 0,
+        "died": 15.98,
+        "clear_s": null,
+        "elapsed_s": 15.98,
+        "targets": 1,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            600000,
+            600000
+          ]
+        ],
+        "log": "target/audit85_runs\\run_나이트_발도_범위_one.log"
+      },
+      {
+        "stats": [
+          395,
+          324,
+          17,
+          4789,
+          666
+        ],
+        "dps": 602.7,
+        "window_dps": 602.7,
+        "dmg": 12054,
+        "kills": 2,
+        "hp0": 4789,
+        "hp_min": 4034,
+        "died": null,
+        "clear_s": null,
+        "elapsed_s": 20.0,
+        "targets": 8,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            5997,
+            5997
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5967,
+            5967
+          ]
+        ],
+        "log": "target/audit85_runs\\run_나이트_발도_범위_pack.log"
+      }
+    ],
+    [
+      "나이트 발도 SP쿨",
+      {
+        "stats": [
+          389,
+          324,
+          17,
+          4789,
+          666
+        ],
+        "dps": 4337.624466571835,
+        "window_dps": 3049.35,
+        "dmg": 60987,
+        "kills": 0,
+        "hp0": 4789,
+        "hp_min": 0,
+        "died": 14.06,
+        "clear_s": null,
+        "elapsed_s": 14.06,
+        "targets": 1,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            600000,
+            600000
+          ]
+        ],
+        "log": "target/audit85_runs\\run_나이트_발도_SP쿨_one.log"
+      },
+      {
+        "stats": [
+          389,
+          324,
+          17,
+          4789,
+          666
+        ],
+        "dps": 602.7,
+        "window_dps": 602.7,
+        "dmg": 12054,
+        "kills": 2,
+        "hp0": 4789,
+        "hp_min": 4034,
+        "died": null,
+        "clear_s": null,
+        "elapsed_s": 20.0,
+        "targets": 8,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            5997,
+            5997
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5967,
+            5967
+          ]
+        ],
+        "log": "target/audit85_runs\\run_나이트_발도_SP쿨_pack.log"
+      }
+    ],
+    [
+      "나이트 발도 쌍월",
+      {
+        "stats": [
+          395,
+          324,
+          17,
+          4789,
+          666
+        ],
+        "dps": 4160.567514677104,
+        "window_dps": 2126.05,
+        "dmg": 42521,
+        "kills": 0,
+        "hp0": 4789,
+        "hp_min": 0,
+        "died": 10.22,
+        "clear_s": null,
+        "elapsed_s": 10.22,
+        "targets": 1,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            600000,
+            600000
+          ]
+        ],
+        "log": "target/audit85_runs\\run_나이트_발도_쌍월_one.log"
+      },
+      {
+        "stats": [
+          395,
+          324,
+          17,
+          4789,
+          666
+        ],
+        "dps": 1269.491525423729,
+        "window_dps": 149.8,
+        "dmg": 2996,
+        "kills": 0,
+        "hp0": 4789,
+        "hp_min": 0,
+        "died": 2.36,
+        "clear_s": null,
+        "elapsed_s": 2.36,
+        "targets": 8,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            5997,
+            5997
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5967,
+            5967
+          ]
+        ],
+        "log": "target/audit85_runs\\run_나이트_발도_쌍월_pack.log"
+      }
+    ],
+    [
+      "로그 1차",
+      {
+        "stats": [
+          309,
+          278,
+          90,
+          2326,
+          654
+        ],
+        "dps": 8089.65,
+        "window_dps": 8089.65,
+        "dmg": 161793,
+        "kills": 0,
+        "hp0": 2326,
+        "hp_min": 2326,
+        "died": null,
+        "clear_s": null,
+        "elapsed_s": 20.0,
+        "targets": 1,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            600000,
+            600000
+          ]
+        ],
+        "log": "target/audit85_runs\\run_로그_1차_one.log"
+      },
+      {
+        "stats": [
+          309,
+          278,
+          90,
+          2326,
+          654
+        ],
+        "dps": 2974.3811881188117,
+        "window_dps": 2403.3,
+        "dmg": 48066,
+        "kills": 8,
+        "hp0": 2326,
+        "hp_min": 2326,
+        "died": null,
+        "clear_s": 16.16,
+        "elapsed_s": 16.16,
+        "targets": 8,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            5997,
+            5997
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5967,
+            5967
+          ]
+        ],
+        "log": "target/audit85_runs\\run_로그_1차_pack.log"
+      }
+    ],
+    [
+      "로그 살상연희 D",
+      {
+        "stats": [
+          286,
+          265,
+          80,
+          2326,
+          654
+        ],
+        "dps": 10447.2,
+        "window_dps": 10447.2,
+        "dmg": 208944,
+        "kills": 0,
+        "hp0": 2326,
+        "hp_min": 1633,
+        "died": null,
+        "clear_s": null,
+        "elapsed_s": 20.0,
+        "targets": 1,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            600000,
+            600000
+          ]
+        ],
+        "log": "target/audit85_runs\\run_로그_살상연희_D_one.log"
+      },
+      {
+        "stats": [
+          286,
+          265,
+          80,
+          2326,
+          654
+        ],
+        "dps": 15915.8940397351,
+        "window_dps": 2403.3,
+        "dmg": 48066,
+        "kills": 8,
+        "hp0": 2326,
+        "hp_min": 2326,
+        "died": null,
+        "clear_s": 3.02,
+        "elapsed_s": 3.02,
+        "targets": 8,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            5997,
+            5997
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5967,
+            5967
+          ]
+        ],
+        "log": "target/audit85_runs\\run_로그_살상연희_D_pack.log"
+      }
+    ],
+    [
+      "로그 일섬",
+      {
+        "stats": [
+          311,
+          293,
+          90,
+          1716,
+          654
+        ],
+        "dps": 6688.35,
+        "window_dps": 6688.35,
+        "dmg": 133767,
+        "kills": 0,
+        "hp0": 1716,
+        "hp_min": 146,
+        "died": null,
+        "clear_s": null,
+        "elapsed_s": 20.0,
+        "targets": 1,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            600000,
+            600000
+          ]
+        ],
+        "log": "target/audit85_runs\\run_로그_일섬_one.log"
+      },
+      {
+        "stats": [
+          311,
+          293,
+          90,
+          1716,
+          654
+        ],
+        "dps": 2104.95,
+        "window_dps": 2104.95,
+        "dmg": 42099,
+        "kills": 7,
+        "hp0": 1716,
+        "hp_min": 1716,
+        "died": null,
+        "clear_s": null,
+        "elapsed_s": 20.0,
+        "targets": 8,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            5997,
+            5997
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5967,
+            5967
+          ]
+        ],
+        "log": "target/audit85_runs\\run_로그_일섬_pack.log"
+      }
+    ],
+    [
+      "야수나이트 체5/6 악의+기본공격 세팅",
+      {
+        "stats": [
+          239,
+          246,
+          11,
+          6926,
+          666
+        ],
+        "dps": 10620.623916811091,
+        "window_dps": 6128.1,
+        "dmg": 122562,
+        "kills": 0,
+        "hp0": 6926,
+        "hp_min": 0,
+        "died": 11.540000000000001,
+        "clear_s": null,
+        "elapsed_s": 11.540000000000001,
+        "targets": 1,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            600000,
+            600000
+          ]
+        ],
+        "log": "target/audit85_runs\\run_야수나이트_체5_6_악의_기본공격_세팅_one.log"
+      },
+      {
+        "stats": [
+          239,
+          246,
+          11,
+          6926,
+          666
+        ],
+        "dps": 1502.25,
+        "window_dps": 1502.25,
+        "dmg": 30045,
+        "kills": 5,
+        "hp0": 6926,
+        "hp_min": 5679,
+        "died": null,
+        "clear_s": null,
+        "elapsed_s": 20.0,
+        "targets": 8,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            5997,
+            5997
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5967,
+            5967
+          ]
+        ],
+        "log": "target/audit85_runs\\run_야수나이트_체5_6_악의_기본공격_세팅_pack.log"
+      }
+    ],
+    [
+      "야수나이트 체1의1지1 악의+기본공격 세팅",
+      {
+        "stats": [
+          239,
+          246,
+          11,
+          4106,
+          1254
+        ],
+        "dps": 16411.03896103896,
+        "window_dps": 6318.25,
+        "dmg": 126365,
+        "kills": 0,
+        "hp0": 4106,
+        "hp_min": 0,
+        "died": 7.7,
+        "clear_s": null,
+        "elapsed_s": 7.7,
+        "targets": 1,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            600000,
+            600000
+          ]
+        ],
+        "log": "target/audit85_runs\\run_야수나이트_체1의1지1_악의_기본공격_세팅_one.log"
+      },
+      {
+        "stats": [
+          239,
+          246,
+          11,
+          4106,
+          1254
+        ],
+        "dps": 1502.25,
+        "window_dps": 1502.25,
+        "dmg": 30045,
+        "kills": 5,
+        "hp0": 4106,
+        "hp_min": 2750,
+        "died": null,
+        "clear_s": null,
+        "elapsed_s": 20.0,
+        "targets": 8,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            5997,
+            5997
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5967,
+            5967
+          ]
+        ],
+        "log": "target/audit85_runs\\run_야수나이트_체1의1지1_악의_기본공격_세팅_pack.log"
+      }
+    ]
+  ]
+}

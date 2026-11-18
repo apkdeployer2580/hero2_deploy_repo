@@ -1,0 +1,18 @@
+# 의상 209 — 「달빛 엘프」 (Claude 초안 2026-10-09, tools_re/costume_draft_elf.py) — 가디언 모드 클리어 보상 (난이도 HARD 이상으로
+# 그 회차 진행도의 95 % 이상, avatar_state::CLEAR_REWARDS). 사용자가 준 그림 3: 금빛 물결 머리와 엘프 귀 · 청록 보석관 · 별 무늬 청록
+# 망토와 하얀 드레스 · 초승달 지팡이. 이름은 Claude 가 정했다(확인 대기). 나이트 방패는 없다(그림에 없다).
+set                   = 달빛 엘프
+head                  = 달빛 엘프-머리
+head.desc             = 보석관을 쓴 엘프 금발
+armor                 = 달빛 엘프-드레스
+armor.desc            = 별을 수놓은 망토 드레스
+shoes                 = 달빛 엘프-구두
+shoes.desc            = 하얀 스타킹과 청록 구두
+weapon.berserker      = 달빛 엘프-달의 대지팡이
+weapon.berserker.desc = 초승달을 얹은 큰 지팡이
+weapon.knight         = 달빛 엘프-초승달 지팡이
+weapon.knight.desc    = 보랏빛 구슬의 지팡이
+weapon.rogue          = 달빛 엘프-달의 완드
+weapon.rogue.desc     = 오른손에 쥐는 달 완드
+offhand.rogue         = 달빛 엘프-별의 완드
+offhand.rogue.desc    = 왼손에 쥐는 별 완드

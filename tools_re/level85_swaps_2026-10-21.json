@@ -1,0 +1,262 @@
+{
+  "probe_sha256": "dfc080e4c8ac80ea850f42413ab805b8839fceaa8548bbc7409558abf3542242",
+  "asset_sha256": "4034c9adea231ae27d0678656ef2c0bd35bc5d9c17e1b401ff48330f833a1769",
+  "source_sha256": {
+    "wie_android/src/guest_anchors.rs": "f0d6a5e643125a00f24612f5192e6bb473fb69604dcc6b7a5b147db66cf42698",
+    "wie_android/src/hero2java.rs": "01fca8ef908242baa249e64c962f288835876fb9a62ecbcacd43cb4744cf47f7",
+    "tools_re/skill_gear.py": "a793eb4332d0ea44316a9cf486069094dc81d8f9e9104e27c4286d02e46630e9"
+  },
+  "sources_unchanged_during_run": true,
+  "frozen_inputs": {
+    "probe": "C:\\hero2NativeAPP\\target\\audit85_swaps_current\\wie_probe.exe",
+    "asset": "C:\\hero2NativeAPP\\target\\audit85_swaps_current\\hero2_ktf.zip"
+  },
+  "frames": 1000,
+  "trials": 1,
+  "level": 99,
+  "equipment_count": 47,
+  "scenario": "guardian_forest_normal_fixed_rotation",
+  "limitation": "장비 47개를 양쪽 모두 확인한 갑옷 교체 비교. 1회 측정으로 반복 변동 미검증. 레이드 및 이동 검증 아님.",
+  "results": [
+    {
+      "baseline": "로그 살상연희 D",
+      "label": "현재 살상연희 무희 47개",
+      "slots": {
+        "w": [
+          3,
+          35
+        ],
+        "w2": [
+          3,
+          36
+        ],
+        "h": [
+          5,
+          36
+        ],
+        "a": [
+          6,
+          59
+        ],
+        "g": [
+          8,
+          58
+        ],
+        "s": [
+          9,
+          59
+        ],
+        "acc": [
+          11,
+          20
+        ]
+      },
+      "single": {
+        "stats": [
+          286,
+          265,
+          80,
+          2326,
+          654
+        ],
+        "dps": 8618.0,
+        "window_dps": 8618.0,
+        "dmg": 172360,
+        "kills": 0,
+        "hp0": 2326,
+        "hp_min": 1633,
+        "died": null,
+        "clear_s": null,
+        "elapsed_s": 20.0,
+        "targets": 1,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            600000,
+            600000
+          ]
+        ],
+        "log": "target/audit85_swaps_current\\run_현재_살상연희_무희_47개_one.log"
+      },
+      "pack": {
+        "stats": [
+          286,
+          265,
+          80,
+          2326,
+          654
+        ],
+        "dps": 15915.8940397351,
+        "window_dps": 2403.3,
+        "dmg": 48066,
+        "kills": 8,
+        "hp0": 2326,
+        "hp_min": 2326,
+        "died": null,
+        "clear_s": 3.02,
+        "elapsed_s": 3.02,
+        "targets": 8,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            5997,
+            5997
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5967,
+            5967
+          ]
+        ],
+        "log": "target/audit85_swaps_current\\run_현재_살상연희_무희_47개_pack.log"
+      }
+    },
+    {
+      "baseline": "로그 살상연희 D",
+      "label": "현재 살상연희 중력 47개",
+      "slots": {
+        "w": [
+          3,
+          35
+        ],
+        "w2": [
+          3,
+          36
+        ],
+        "h": [
+          5,
+          36
+        ],
+        "a": [
+          6,
+          60
+        ],
+        "g": [
+          8,
+          58
+        ],
+        "s": [
+          9,
+          59
+        ],
+        "acc": [
+          11,
+          20
+        ]
+      },
+      "single": {
+        "stats": [
+          286,
+          265,
+          80,
+          2326,
+          654
+        ],
+        "dps": 11126.7,
+        "window_dps": 11126.7,
+        "dmg": 222534,
+        "kills": 0,
+        "hp0": 2326,
+        "hp_min": 1633,
+        "died": null,
+        "clear_s": null,
+        "elapsed_s": 20.0,
+        "targets": 1,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            600000,
+            600000
+          ]
+        ],
+        "log": "target/audit85_swaps_current\\run_현재_살상연희_중력_47개_one.log"
+      },
+      "pack": {
+        "stats": [
+          286,
+          265,
+          80,
+          2326,
+          654
+        ],
+        "dps": 30421.51898734177,
+        "window_dps": 2403.3,
+        "dmg": 48066,
+        "kills": 8,
+        "hp0": 2326,
+        "hp_min": 2326,
+        "died": null,
+        "clear_s": 1.58,
+        "elapsed_s": 1.58,
+        "targets": 8,
+        "resets": 0,
+        "missing": 0,
+        "valid": true,
+        "mobs": [
+          [
+            5997,
+            5997
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5997,
+            5997
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            6027,
+            6027
+          ],
+          [
+            5967,
+            5967
+          ]
+        ],
+        "log": "target/audit85_swaps_current\\run_현재_살상연희_중력_47개_pack.log"
+      }
+    }
+  ]
+}

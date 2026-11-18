@@ -1,0 +1,83 @@
+UPSTREAM.txt — where this tree's code came from, and what was changed
+=====================================================================
+Written 2026-09-04 (실행 순서 #6). Before this file, the only record of any of it was
+prose scattered through `Cargo.toml`'s `[patch]` comments and `CLAUDE.md`.
+
+This repository is NOT original work top to bottom. It is:
+
+  * a fork of a sibling project (hero2NativeAPP <- hero3NativeAPP), which is itself
+  * an application built on top of five VENDORED FORKS of other people's crates.
+
+Nothing here is redistributed under a licence of this project's choosing. Each
+vendored tree keeps its own upstream licence file, and those licences govern it.
+
+
+1. THIS APPLICATION
+-------------------
+hero2NativeAPP started as a fork of hero3NativeAPP at commit `262dd63` (2026-08-18).
+The emulator core (`vendor/*`) and the HUD engine (`wie_android/src/overlay.rs` +
+`placement.rs`) came across unchanged; the game-specific reverse engineering did not.
+`CLAUDE.md` §「두 트리를 비교할 때」 records which files are still byte-identical to the
+seed and which have diverged.
+
+The game itself — 영웅서기2 (Heroes Lore: Knight of the Frozen Sea), KTF edition
+1.0.7 — is NOT in this repository and is not ours. `android_app/.../assets/*.zip` is
+gitignored, and every tool here takes the archive as an input. Do not commit it.
+
+
+2. VENDORED FORKS  (`vendor/`, excluded from the cargo workspace)
+----------------------------------------------------------------
+Each is redirected in place of the upstream crate by a `[patch]` block in
+`Cargo.toml`; that block's comment is the authoritative statement of WHY the fork
+exists and WHAT it changes. Summary:
+
+  vendor/wie          <- https://github.com/dlunch/wie.git
+                         MIT (Copyright 2020 Inseok Lee) — vendor/wie/LICENSE
+                         The WIPI/KTF/LGT emulator. Fork fixes the KTF save-load read
+                         path (`wie_wipi_c/src/api/database.rs::select_record_ktf`
+                         delivered zero bytes, so valid saves read as empty slots).
+
+  vendor/rustjava     <- https://github.com/dlunch/RustJava.git  (rev 62cf0c6)
+                         MIT (Copyright 2020 Inseok Lee) — vendor/rustjava/LICENSE
+                         The JVM under wie's java runtime. Fork reorders
+                         `ThreadStartProxy` cleanup and tolerates a failed put_field,
+                         because hero2 is a real MIDlet whose worker threads EXIT and
+                         free their own Thread instance.
+
+  vendor/arm32_cpu    <- https://github.com/dlunch/arm32_cpu.git
+                         MIT — vendor/arm32_cpu/LICENSE
+                         The ARM interpreter. Fork is a perf change (decode LUT +
+                         redundant-decode removal).
+
+  vendor/softbuffer   <- softbuffer 0.4.8 (crates.io)
+                         MIT OR Apache-2.0 (Copyright 2022 Kirill Chibisov) —
+                         vendor/softbuffer/LICENSE-MIT, LICENSE-APACHE
+                         The host present path. Fork stops the Android backend
+                         allocating and zeroing a full-window buffer every frame.
+
+  vendor/oxisynth     <- oxisynth 0.1.0 (crates.io)
+                         ⚠ LGPL-2.1 — vendor/oxisynth/LICENSE
+                         The MIDI synth. Fork stops the SoundFont loader deep-copying
+                         the whole font per instance.
+
+⚠ THE LICENCE THAT IS NOT LIKE THE OTHERS. `oxisynth` is LGPL-2.1 and it is linked
+STATICALLY into `libmain.so`. LGPL-2.1 §6 permits that only if the recipient is left
+able to relink the work against a modified library (e.g. by also offering the object
+files, or by linking dynamically). Today the app is sideload-only and unpublished
+(사용자 결정 2026-08-28: no Play listing), so no third party has received a binary and
+nothing is owed to anyone yet. That changes the moment an APK is handed to someone
+else. This is a note, not a legal opinion — decide it before distributing, not after.
+
+
+3. UPDATING A FORK
+------------------
+⛔ Automated dependency updates are deliberately DISABLED (`.github/dependabot.yml`
+and its auto-merge workflow were removed; do not put them back). Reason: an upstream
+type change breaks a vendored fork, and a one-line lockfile bump is enough to do it.
+Measured: `wipi_types 1e0c634 -> 5c74444` removed `JavaClassDescriptor::unk6` and the
+vendored `wie_ktf` stopped compiling (E0560) — on the KTF path, which is the one hero2
+runs. See CLAUDE.md §「의존성 자동 갱신은 끈다」.
+
+To update: `cargo update -p <crate>` by hand, then pass the headless check —
+`.\build_probe.ps1 -Run` must still reach 신드라프 상점 at f=560 and render the
+three-person party at f=1200.

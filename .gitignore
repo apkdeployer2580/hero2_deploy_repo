@@ -1,0 +1,69 @@
+/target
+.vscode
+wie_web/dist
+**/node_modules
+# --- native-app build artifacts / machine-specific / logs (added for hero3NativeAPP push) ---
+**/target/
+*.log
+*.err
+*.apk
+deser_dump.txt
+/android_app/.gradle/
+/android_app/build/
+/android_app/app/build/
+/android_app/app/.cxx/
+/android_app/local.properties
+/android_app/app/src/main/jniLibs/
+hero3_server/*.jsonl
+# ★ Never publish the live server state: the account store holds real per-device
+# account ids (which ARE the credential in the current model) and 219-byte
+# character saves in the clear, and the transcripts hold both plus peer IPs.
+hero3_server/*.db
+hero3_server/*.db-shm
+hero3_server/*.db-wal
+hero3_server/recovery_backup_*.bin
+# Throwaway TLS test certificate + key (tls_e2e_test.py regenerates them).
+hero3_server/tls_test.crt
+hero3_server/tls_test.key
+**/__pycache__/
+
+# Standalone selftest binaries (rustc --edition 2021 --test <x>_selftest.rs -o …).
+# ~7.5 MB each and rebuilt on demand — they are output, not source.
+/t?.exe
+/tt_*.exe
+# Match the archive by NAME too, anywhere, with any suffix. The path rule above only
+# guards the one slot the build reads from, and tools_re/patch_asset.py drops a
+# byte-identical `.pre-i18-rename` copy outside it — same licensed content, not
+# matched by the path rule and not even ending in .zip.
+hero3_fixed.zip*
+# ★ The KTF/SKT original dumps themselves, staged here to feed
+# tools_re/make_hero2_asset.py. Same licensed content as the repackaged archive
+# above, under names the rules above do not match (`영웅서기2-1.zip`).
+/dist/
+# ★ Signing keys. They are configured from OUTSIDE the repo (env, or
+# %USERPROFILE%\.gradle\gradle.properties) precisely so none of this can ever be
+# committed — these patterns are the second line of defence. A leaked release key
+# lets anyone ship an "update" to installed copies.
+*.jks
+*.keystore
+keystore.properties
+signing.properties
+
+# Pre-rename copy of the shipped game archive (1.8 MB). Kept locally so the
+# i18_dat rename can be undone; NOT under assets/, which Gradle packages wholesale.
+android_app/asset_backup/
+
+# One-off throwaway scripts. Two of these (`scratch_verify_b.py`, `scratch_verify_b2.py`)
+# reached git and sat there for weeks reading a hardcoded `d:/tmp/client.bin` that no
+# longer exists (2026-09-04, 순서표 #6). Name a scratch script `scratch_*` and it stays
+# out; if it earns a place, move it into `tools_re/` and give it argv.
+scratch_*
+
+# ★ Generated web pages (tools_re/droptable → out/hero2-drop-table/index.html). They embed
+# game data and item icons, so they are deployed (Vercel), never committed — the generator
+# and template in tools_re/droptable/ are the source.
+/out
+/target_fa/
+
+# per-session probe / check target dirs (CARGO_TARGET_DIR=target_<session>)
+/target_*/

@@ -1,0 +1,26 @@
+# 의상 200 — 세트 하나 = 장비창 아바타 칸마다 아이템 하나 (★ A3c 2026-10-01: 투구 · 갑옷 · 신발 · 무기 · ★ A4 보조손).
+# make_hero2_asset.py 가 모든 의상의 이 파일을 jar 의 hero/costume.txt 로 모은다(EUC-KR).
+# 게임 글꼴이 그리는 글자만 — 한글 음절 · 대문자 · 숫자 · 기호 (소문자는 안 그려진다). 이름·설명은 114 px 까지.
+# 칸의 그림이 있으면 그 칸의 이름이 있어야 한다: head = head_*.png · armor = body_*/arm_*.png ·
+# shoes = leg_*.png · weapon = weapon_<직업>_*.png · offhand = offhand_<직업>_*.png (costumes/README.md).
+# ★ A4 (사용자 2026-10-01): 무기·보조손은 직업마다 이름이 다르다 — `<칸>.<berserker|knight|rogue>`.
+#   버서커 = 이안의 낡은 대검 (보조손 없음) · 나이트 = 이안의 낡은 도검 + 이안의 낡은 방패 · 로그 = 이안의 낡은 단검 + 이안의 보조 단검.
+# ★ 2026-10-01 (사용자: *"설명요약에 이안이 사용한 낡은 대검 이런거 적어야해"*): 설명 = 그 아이템이 무엇인지 한 줄 —
+#   옷장 이름칸 둘째 줄(획득 회차 「NORMAL 획득」 자리)에 그대로 보인다. 무기·보조손은 직업마다.
+set = 빙해의 검사
+head = 이안의 머리
+head.desc = 이안의 헝클어진 은발
+armor = 이안의 낡은 옷
+armor.desc = 이안이 입던 낡은 여행복
+shoes = 이안의 낡은 신발
+shoes.desc = 이안이 신던 낡은 장화
+weapon.berserker = 이안의 낡은 대검
+weapon.berserker.desc = 이안이 사용한 낡은 대검
+weapon.knight = 이안의 낡은 도검
+weapon.knight.desc = 이안이 사용한 낡은 도검
+weapon.rogue = 이안의 낡은 단검
+weapon.rogue.desc = 이안이 사용한 낡은 단검
+offhand.knight = 이안의 낡은 방패
+offhand.knight.desc = 이안이 사용한 낡은 방패
+offhand.rogue = 이안의 보조 단검
+offhand.rogue.desc = 이안이 사용한 보조 단검

@@ -1,0 +1,38 @@
+{
+  "tool": "image_gen.imagegen",
+  "mode": "built-in",
+  "type": "gameplay-reference mockup, not engine capture",
+  "inputs": [
+    {
+      "id": "A",
+      "referenced_image_paths": [
+        "C:/hero2NativeAPP/docs/skill/demon_charge_2026-10-13.png",
+        "C:/hero2NativeAPP/docs/skill/demon_sheet_2026-10-13.png",
+        "C:/hero2NativeAPP/docs/skill/astra_demon/boards/01_awakening.png",
+        "C:/hero2NativeAPP/docs/skill/astra_demon/boards/02_claw_charge.png"
+      ],
+      "transparent_background": false
+    },
+    {
+      "id": "B",
+      "referenced_image_paths": [
+        "C:/hero2NativeAPP/docs/skill/demon_charge_2026-10-13.png",
+        "C:/hero2NativeAPP/docs/skill/demon_sheet_2026-10-13.png",
+        "C:/hero2NativeAPP/docs/skill/astra_demon/ingame/01_transform_claw.png",
+        "C:/hero2NativeAPP/docs/skill/astra_demon/boards/03_dark_arts.png"
+      ],
+      "transparent_background": false
+    },
+    {
+      "id": "C",
+      "referenced_image_paths": [
+        "C:/hero2NativeAPP/docs/skill/demon_charge_2026-10-13.png",
+        "C:/hero2NativeAPP/docs/skill/demon_sheet_2026-10-13.png",
+        "C:/hero2NativeAPP/docs/skill/astra_demon/ingame/01_transform_claw.png",
+        "C:/hero2NativeAPP/docs/skill/astra_demon/boards/03_dark_arts.png",
+        "C:/hero2NativeAPP/docs/skill/astra_demon/boards/04_inferno_lava.png"
+      ],
+      "transparent_background": false
+    }
+  ]
+}

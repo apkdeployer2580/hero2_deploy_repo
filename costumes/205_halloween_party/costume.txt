@@ -1,0 +1,15 @@
+# 의상 205 — 「할로윈 파티」 (Claude 초안 2026-10-06, tools_re/costume_draft_odin.py) — 최종보스 오딘을 본뜬 가면과 무기.
+# HELL 클리어 보상 — 난이도 HARD 이상으로 그 회차 진행도(완료한 퀘스트)의 95 % 이상 (avatar_state::CLEAR_REWARDS).
+# 이름 = 「할로윈 파티-…」: 이름칸 114 px — 「미니 오딘주먹」은 공백을 빼야 들어간다(할로윈 파티-미니오딘주먹 = 112 px).
+# 갑옷 · 신발 · 나이트 방패는 없다(사용자 목록 그대로).
+set                   = 할로윈 파티
+head                  = 할로윈 파티-오딘 가면
+head.desc             = 오딘의 얼굴을 본뜬 가면
+weapon.berserker      = 할로윈 파티-오딘 송곳니
+weapon.berserker.desc = 오딘의 엄니로 만든 대검
+weapon.knight         = 할로윈 파티-오딘의 손톱
+weapon.knight.desc    = 오딘의 손톱을 본뜬 도검
+weapon.rogue          = 할로윈 파티-미니오딘주먹
+weapon.rogue.desc     = 오른손에 끼는 오딘 주먹
+offhand.rogue         = 할로윈 파티-미니오딘주먹
+offhand.rogue.desc    = 왼손에 끼는 오딘 주먹

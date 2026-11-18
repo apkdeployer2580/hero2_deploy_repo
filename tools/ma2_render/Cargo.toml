@@ -1,0 +1,16 @@
+[package]
+name = "ma2_render"
+version = "0.1.0"
+edition = "2021"
+publish = false
+description = "hero2 MA-2 songs offline: the shipping parser and FM engine, dumped and rendered to WAV"
+
+# Its own workspace: a local tool, not part of the app's build (the root workspace lists its
+# members explicitly and must not pick this up).
+[workspace]
+
+[dependencies]
+
+[profile.release]
+opt-level = 3
+debug = false

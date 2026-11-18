@@ -1,0 +1,19 @@
+# 의상 203 — 「수영장 파티」 (Claude 초안 2026-10-01, tools_re/costume_draft_pool.py) — HELL 클리어(난이도 EASY 이상) 보상.
+# 이름 = 「수영장 파티-…」: 「수영장 파티 - 비키니 상의」는 121 px 라 이름칸(114 px)에 안 들어간다 — 하이픈 옆 공백을 뺐다.
+set                 = 수영장 파티
+head                = 수영장 파티-선글라스
+head.desc           = 머리 위에 얹은 선글라스
+armor               = 수영장 파티-비키니 상의
+armor.desc          = 분홍 물방울 비키니 상의
+shoes               = 수영장 파티-비키니 하의
+shoes.desc          = 분홍 비키니와 슬리퍼
+weapon.berserker    = 수영장 파티-큰 튜브
+weapon.berserker.desc = 대검처럼 휘두르는 튜브
+weapon.knight       = 수영장 파티-풍선 검
+weapon.knight.desc  = 파란 풍선으로 만든 검
+weapon.rogue        = 수영장 파티-큰오리인형
+weapon.rogue.desc   = 말랑말랑한 큰 오리인형
+offhand.knight      = 수영장 파티-풍선 방패
+offhand.knight.desc = 풍선으로 만든 방패
+offhand.rogue       = 수영장 파티-작은오리인형
+offhand.rogue.desc  = 말랑말랑한 작은 오리인형

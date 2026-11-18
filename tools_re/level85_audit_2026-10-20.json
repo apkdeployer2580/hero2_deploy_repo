@@ -1,0 +1,5658 @@
+{
+  "scope": "현재 배포 ZIP의 요구 레벨 85 장비 전체; 정적 전수 감사와 기존 실측 커버리지 감사",
+  "sha256": {
+    "asset": "cd345dc0b1d2c61cbe22014ee4918ab7f53cfb295403e458c95cf860ab292950",
+    "anchors": "55deaa2bf923e4c601a52b210f04ef169407731866ad41b50abb7c7c59a77a64",
+    "probe": "1fc452fc2a66c947d79d1048616be4fcd3982f76aaf2a486b89126d707a6a418"
+  },
+  "counts": {
+    "items": 91,
+    "gear_table": 89,
+    "special_handlers": 2,
+    "by_type": {
+      "0": 5,
+      "1": 4,
+      "2": 7,
+      "3": 8,
+      "4": 4,
+      "5": 12,
+      "6": 14,
+      "8": 12,
+      "9": 15,
+      "10": 2,
+      "11": 3,
+      "12": 5
+    },
+    "in_model": 72,
+    "in_probe_plans": 56,
+    "asset_description_checks": 88,
+    "asset_description_mismatches": 0
+  },
+  "old_measurement_probe_matches_current": false,
+  "conditional_comparisons": {
+    "gravity_47_items_multiplier": 1.375,
+    "slaughter_armor_swap_damage_ratio_at_47_items": 1.1455345501955672,
+    "slaughter_armor_swap_condition": "백 번째 칼날 + 무희 두건 + 칼춤 장갑 + 잔영의 신; 무희의 옷을 중력의 갑주로 교체. 같은 대상·회전의 살상연희 피해 배율 비교이며 전체 DPS 실측 아님.",
+    "thorn_plate_vs_abyss_hp_ratio_when_no_other_hp_percent": 1.19921875
+  },
+  "limitations": [
+    "전 아이템의 독립적인 전투 실측 및 모든 조합 전수 측정은 아님.",
+    "기존 모델은 LV99 기준이며 LV85 착용 시점 검증을 대체하지 못함.",
+    "기존 PLANS는 15세팅, 고정 위치 숲 NORMAL, 1회 측정. 이동·9종 레이드·장기 회전·반복 변동 미검증.",
+    "드랍 수치는 기존 해독 모델의 추정이며 조합 및 레이드 보상을 포함하지 않음.",
+    "일반 세팅과 악의 세팅의 야수/버프 사용 정책이 달라 직업 순위로 해석하면 안 됨.",
+    "살상연희 양손 추가 타수: 실제 합산과 모델 최대값 선택이 불일치. 기존 모델 점수를 확정 근거로 사용하지 말 것."
+  ],
+  "items": [
+    {
+      "key": [
+        0,
+        33
+      ],
+      "name": "오딘의 대검",
+      "level": 85,
+      "base_stats": {
+        "power": 320,
+        "powerMin": 300,
+        "optionRanges": [
+          [
+            16,
+            26
+          ],
+          [
+            16,
+            26
+          ],
+          [
+            16,
+            26
+          ],
+          [
+            16,
+            26
+          ],
+          [
+            16,
+            26
+          ]
+        ],
+        "refineMax": 50,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "기본공격 피해 +50%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Dmg",
+          [
+            "0",
+            "0",
+            "3",
+            "128"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0005288678171546338,
+        0.007492294076357311,
+        "갈색곰"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        0,
+        34
+      ],
+      "name": "디미트리의 참수검",
+      "level": 85,
+      "base_stats": {
+        "power": 335,
+        "powerMin": 310,
+        "optionRanges": [
+          [
+            16,
+            26
+          ],
+          [
+            16,
+            26
+          ],
+          [
+            16,
+            26
+          ],
+          [
+            16,
+            26
+          ],
+          [
+            16,
+            26
+          ]
+        ],
+        "refineMax": 50,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "처치 시 HP 5% 회복",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "HealHp",
+          [
+            "13"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": false,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.0005288678171546338,
+        0.007492294076357311,
+        "갈색곰"
+      ],
+      "assessment": "보스 단일전 처치 회복 비활성. 공격력은 오딘보다 높으므로 단순 하위호환 아님."
+    },
+    {
+      "key": [
+        0,
+        35
+      ],
+      "name": "멈추지 않는 대검",
+      "level": 85,
+      "base_stats": {
+        "power": 320,
+        "powerMin": 300,
+        "optionRanges": [
+          [
+            16,
+            26
+          ],
+          [
+            16,
+            26
+          ],
+          [
+            16,
+            26
+          ],
+          [
+            16,
+            26
+          ],
+          [
+            16,
+            26
+          ]
+        ],
+        "refineMax": 50,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "격분 시 게이지 50% 격분 중 피해 +60%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "FuryStart",
+          [
+            "50"
+          ]
+        ],
+        [
+          "FuryDmg",
+          [
+            "154"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0005288678171546337,
+        0.0049948627175715405,
+        "갈색곰"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        0,
+        36
+      ],
+      "name": "응징의 대검",
+      "level": 85,
+      "base_stats": {
+        "power": 320,
+        "powerMin": 300,
+        "optionRanges": [
+          [
+            16,
+            26
+          ],
+          [
+            16,
+            26
+          ],
+          [
+            16,
+            26
+          ],
+          [
+            16,
+            26
+          ],
+          [
+            16,
+            26
+          ]
+        ],
+        "refineMax": 50,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "반격 피해 +80%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Counter",
+          [
+            "205"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0005288678171546337,
+        0.0049948627175715405,
+        "갈색곰"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        0,
+        37
+      ],
+      "name": "광마의 대검",
+      "level": 85,
+      "base_stats": {
+        "power": 320,
+        "powerMin": 300,
+        "optionRanges": [
+          [
+            16,
+            26
+          ],
+          [
+            16,
+            26
+          ],
+          [
+            16,
+            26
+          ],
+          [
+            16,
+            26
+          ],
+          [
+            16,
+            26
+          ]
+        ],
+        "refineMax": 50,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "할퀴기 격분 +4%,   격분 중 타격마다    악의 쿨 -0.1초",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "ClawBank",
+          [
+            "4"
+          ]
+        ],
+        [
+          "FuryMaliceCd",
+          [
+            "2"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.0005288678171546337,
+        0.0049948627175715405,
+        "갈색곰"
+      ],
+      "assessment": "악의와 격분을 왕복하는 장기 회전 미검증."
+    },
+    {
+      "key": [
+        1,
+        28
+      ],
+      "name": "고대수호물의 도끼",
+      "level": 85,
+      "base_stats": {
+        "power": 315,
+        "powerMin": 275,
+        "optionRanges": [
+          [
+            15,
+            25
+          ],
+          [
+            15,
+            25
+          ],
+          [
+            15,
+            25
+          ],
+          [
+            15,
+            25
+          ],
+          [
+            15,
+            25
+          ]
+        ],
+        "refineMax": 50,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "받는 피해 -15%    최대 HP +15%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Taken",
+          [
+            "218"
+          ]
+        ],
+        [
+          "MaxHp",
+          [
+            "38"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": false,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.0007933017257319507,
+        0.007492294076357311,
+        "흑곰"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        1,
+        29
+      ],
+      "name": "제스의 수련도끼",
+      "level": 85,
+      "base_stats": {
+        "power": 325,
+        "powerMin": 285,
+        "optionRanges": [
+          [
+            15,
+            25
+          ],
+          [
+            15,
+            25
+          ],
+          [
+            15,
+            25
+          ],
+          [
+            15,
+            25
+          ],
+          [
+            15,
+            25
+          ]
+        ],
+        "refineMax": 50,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "폭풍강타 피해      +100%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Dmg",
+          [
+            "0",
+            "9",
+            "9",
+            "256"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0007933017257319507,
+        0.007492294076357311,
+        "흑곰"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        1,
+        30
+      ],
+      "name": "멈추지 않는 도끼",
+      "level": 85,
+      "base_stats": {
+        "power": 325,
+        "powerMin": 285,
+        "optionRanges": [
+          [
+            15,
+            25
+          ],
+          [
+            15,
+            25
+          ],
+          [
+            15,
+            25
+          ],
+          [
+            15,
+            25
+          ],
+          [
+            15,
+            25
+          ]
+        ],
+        "refineMax": 50,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "격분 시 게이지 50% 격분 중 피해 +60%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "FuryStart",
+          [
+            "50"
+          ]
+        ],
+        [
+          "FuryDmg",
+          [
+            "154"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": false,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.0006170124533470728,
+        0.007492294076357311,
+        "흑곰"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        1,
+        31
+      ],
+      "name": "피바람 도끼",
+      "level": 85,
+      "base_stats": {
+        "power": 325,
+        "powerMin": 285,
+        "optionRanges": [
+          [
+            15,
+            25
+          ],
+          [
+            15,
+            25
+          ],
+          [
+            15,
+            25
+          ],
+          [
+            15,
+            25
+          ],
+          [
+            15,
+            25
+          ]
+        ],
+        "refineMax": 50,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "할퀴기 1, 2단이    사방을 할퀸다,     악의 중 처치 HP 3%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "DemonKillHeal",
+          [
+            "8"
+          ]
+        ],
+        [
+          "ClawSpin",
+          []
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": false,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.0006170124533470728,
+        0.007492294076357311,
+        "흑곰"
+      ],
+      "assessment": "사방 범위·처치 회복을 이동/무리에서 실측해야 함."
+    },
+    {
+      "key": [
+        2,
+        28
+      ],
+      "name": "이안의 검",
+      "level": 85,
+      "base_stats": {
+        "power": 205,
+        "powerMin": 190,
+        "optionRanges": [
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ]
+        ],
+        "refineMax": 50,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "검기 피해 +40%,   일격, 일섬        피해 +60%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Dmg",
+          [
+            "1",
+            "4",
+            "4",
+            "102"
+          ]
+        ],
+        [
+          "Dmg",
+          [
+            "2",
+            "5",
+            "5",
+            "154"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0007051570895395117,
+        0.007492294076357311,
+        "백곰"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        2,
+        29
+      ],
+      "name": "파멸의 수호검",
+      "level": 85,
+      "base_stats": {
+        "power": 212,
+        "powerMin": 195,
+        "optionRanges": [
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ]
+        ],
+        "refineMax": 50,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "방패치기 피해 +50% 급소가격, 극사     피해 +20%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Dmg",
+          [
+            "1",
+            "6",
+            "6",
+            "128"
+          ]
+        ],
+        [
+          "Dmg",
+          [
+            "2",
+            "7",
+            "7",
+            "51"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0007051570895395117,
+        0.007492294076357311,
+        "백곰"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        2,
+        30
+      ],
+      "name": "쌍월",
+      "level": 85,
+      "base_stats": {
+        "power": 212,
+        "powerMin": 195,
+        "optionRanges": [
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ]
+        ],
+        "refineMax": 50,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "짧은 시간내에      발도 두번 사용가능",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Range",
+          [
+            "GearPatch::IAIDO_TWICE"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0002468049813388291,
+        0.0029969176305429243,
+        "백곰"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        2,
+        31
+      ],
+      "name": "검풍",
+      "level": 85,
+      "base_stats": {
+        "power": 205,
+        "powerMin": 190,
+        "optionRanges": [
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ]
+        ],
+        "refineMax": 50,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "기본공격마다 검기   피해 30%, 나이트",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Wind",
+          [
+            "GearPatch::WIND_KEEP"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.0002468049813388291,
+        0.0029969176305429243,
+        "백곰"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        2,
+        32
+      ],
+      "name": "타락한 성검",
+      "level": 85,
+      "base_stats": {
+        "power": 205,
+        "powerMin": 190,
+        "optionRanges": [
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ]
+        ],
+        "refineMax": 50,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "신의가호 중 할퀴기  범위 +1칸, 지옥칼날 어둠심판 SP -40%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "ToggleSp",
+          [
+            "154"
+          ]
+        ],
+        [
+          "ClawWideBlessed",
+          []
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": false,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.0002468049813388291,
+        0.0029969176305429243,
+        "백곰"
+      ],
+      "assessment": "SP 소모 154/256=60.16% 유지로 설명 -40%와 일치. 신의가호 범위는 별도 조건."
+    },
+    {
+      "key": [
+        2,
+        33
+      ],
+      "name": "회천도",
+      "level": 85,
+      "base_stats": {
+        "power": 212,
+        "powerMin": 195,
+        "optionRanges": [
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ]
+        ],
+        "refineMax": 50,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "발도 범위 +1칸,    발도 피해 +30%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "IaidoReach",
+          [
+            "1"
+          ]
+        ],
+        [
+          "Dmg",
+          [
+            "1",
+            "9",
+            "9",
+            "77"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0002468049813388291,
+        0.0029969176305429243,
+        "백곰"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        2,
+        34
+      ],
+      "name": "찰나의 검",
+      "level": 85,
+      "base_stats": {
+        "power": 205,
+        "powerMin": 190,
+        "optionRanges": [
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ]
+        ],
+        "refineMax": 50,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "발도 SP -30%,    발도 쿨타임 -30%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "KindSp",
+          [
+            "1",
+            "9",
+            "77"
+          ]
+        ],
+        [
+          "KindCd",
+          [
+            "1",
+            "6",
+            "77"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0002468049813388291,
+        0.0029969176305429243,
+        "백곰"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        3,
+        33
+      ],
+      "name": "터줏대감의 송곳니",
+      "level": 85,
+      "base_stats": {
+        "power": 110,
+        "powerMin": 100,
+        "optionRanges": [
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            13
+          ]
+        ],
+        "refineMax": 50,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "맹독감염 중독      피해 +50%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Venom",
+          [
+            "128"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0007051570895395117,
+        0.007492294076357311,
+        "반달곰"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        3,
+        34
+      ],
+      "name": "응보의 단검",
+      "level": 85,
+      "base_stats": {
+        "power": 114,
+        "powerMin": 104,
+        "optionRanges": [
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            13
+          ]
+        ],
+        "refineMax": 50,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "살상연희 피해 +50%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Dmg",
+          [
+            "2",
+            "10",
+            "10",
+            "128"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0007051570895395117,
+        0.007492294076357311,
+        "반달곰"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        3,
+        35
+      ],
+      "name": "백 번째 칼날",
+      "level": 85,
+      "base_stats": {
+        "power": 114,
+        "powerMin": 104,
+        "optionRanges": [
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            13
+          ]
+        ],
+        "refineMax": 50,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "살상연희 타수 +5,  살상연희 피해 +30%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Dmg",
+          [
+            "2",
+            "10",
+            "10",
+            "77"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.00017628927238487788,
+        0.0024974313587857702,
+        "반달곰"
+      ],
+      "assessment": "런타임 추가 타수는 양손 합산. 기존 모델은 최대값만 선택해 불일치. 마지막 춤 착용 시 타수 이점 소멸; 응보의 +50%가 +30%보다 유리."
+    },
+    {
+      "key": [
+        3,
+        36
+      ],
+      "name": "무모한 칼춤",
+      "level": 85,
+      "base_stats": {
+        "power": 114,
+        "powerMin": 104,
+        "optionRanges": [
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            13
+          ]
+        ],
+        "refineMax": 50,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "살상연희 타수 +6,  처치당 +2(최대8)",
+      "source_description_matches_asset": true,
+      "effects": [],
+      "special_handler": "RoguePatch::gear_words",
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.00017628927238487788,
+        0.0024974313587857702,
+        "반달곰"
+      ],
+      "assessment": "효과 표 밖 RoguePatch 적용. 런타임 양손 추가 타수 합산: 백 번째 칼날과 +11타, 기본 포함 19타. 기존 모델 14타와 불일치. 마지막 춤과 타수 보너스 상충."
+    },
+    {
+      "key": [
+        3,
+        37
+      ],
+      "name": "피의 연쇄",
+      "level": 85,
+      "base_stats": {
+        "power": 114,
+        "powerMin": 104,
+        "optionRanges": [
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            13
+          ]
+        ],
+        "refineMax": 50,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "급소가격,극사 +80% HP 가득한 적 극사  한 방 처치시 SP 5%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Dmg",
+          [
+            "2",
+            "7",
+            "7",
+            "205"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.00017628927238487788,
+        0.0024974313587857702,
+        "반달곰"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        3,
+        38
+      ],
+      "name": "회오리 송곳니",
+      "level": 85,
+      "base_stats": {
+        "power": 114,
+        "powerMin": 104,
+        "optionRanges": [
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            13
+          ]
+        ],
+        "refineMax": 50,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "일풍격으로 처치 시  재시전 (최대 3번)",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Range",
+          [
+            "GearPatch::RANGE_WHIRL"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.00017628927238487788,
+        0.0024974313587857702,
+        "반달곰"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        3,
+        39
+      ],
+      "name": "번개의 호흡",
+      "level": 85,
+      "base_stats": {
+        "power": 114,
+        "powerMin": 104,
+        "optionRanges": [
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            13
+          ]
+        ],
+        "refineMax": 50,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "일섬 피해 +30%,   일섬 쿨타임 -20%,  일섬 SP -20%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "With",
+          [
+            [
+              12,
+              19
+            ],
+            [
+              [
+                "Dmg",
+                [
+                  "2",
+                  "5",
+                  "5",
+                  "77"
+                ]
+              ],
+              [
+                "KindCd",
+                [
+                  "2",
+                  "0",
+                  "51"
+                ]
+              ],
+              [
+                "KindSp",
+                [
+                  "2",
+                  "5",
+                  "51"
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.00017628927238487788,
+        0.0024974313587857702,
+        "반달곰"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        3,
+        40
+      ],
+      "name": "악몽의 독니",
+      "level": 85,
+      "base_stats": {
+        "power": 114,
+        "powerMin": 104,
+        "optionRanges": [
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            13
+          ]
+        ],
+        "refineMax": 50,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "악의 중 할퀴기가    맹독을 걸고,       중독된 적에게 +25%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "ClawPoisoned",
+          [
+            "64"
+          ]
+        ],
+        [
+          "ClawVenom",
+          []
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": false,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.00017628927238487788,
+        0.0024974313587857702,
+        "반달곰"
+      ],
+      "assessment": "악의 맹독·중독 대상 조건을 실측해야 함."
+    },
+    {
+      "key": [
+        4,
+        33
+      ],
+      "name": "심판의 철퇴",
+      "level": 85,
+      "base_stats": {
+        "power": 210,
+        "powerMin": 192,
+        "optionRanges": [
+          [
+            10,
+            15
+          ],
+          [
+            10,
+            15
+          ],
+          [
+            10,
+            15
+          ],
+          [
+            10,
+            15
+          ],
+          [
+            10,
+            15
+          ]
+        ],
+        "refineMax": 50,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "둔기강타 피해 +20%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Dmg",
+          [
+            "1",
+            "5",
+            "5",
+            "51"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": false,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.0007051570895395117,
+        0.007492294076357311,
+        "독수리"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        4,
+        34
+      ],
+      "name": "보복의 망치",
+      "level": 85,
+      "base_stats": {
+        "power": 216,
+        "powerMin": 198,
+        "optionRanges": [
+          [
+            10,
+            15
+          ],
+          [
+            10,
+            15
+          ],
+          [
+            10,
+            15
+          ],
+          [
+            10,
+            15
+          ],
+          [
+            10,
+            15
+          ]
+        ],
+        "refineMax": 50,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "받는 피해 -10%    받는 피해의 20%    반사",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Taken",
+          [
+            "230"
+          ]
+        ],
+        [
+          "Reflect",
+          [
+            "51"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": false,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.0007051570895395117,
+        0.007492294076357311,
+        "독수리"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        4,
+        35
+      ],
+      "name": "협곡 지하 곡괭이",
+      "level": 85,
+      "base_stats": {
+        "power": 210,
+        "powerMin": 192,
+        "optionRanges": [
+          [
+            10,
+            15
+          ],
+          [
+            10,
+            15
+          ],
+          [
+            10,
+            15
+          ],
+          [
+            10,
+            15
+          ],
+          [
+            10,
+            15
+          ]
+        ],
+        "refineMax": 50,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "둔기강타          범위 +50%,       쿨타임 -20%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "BluntReach",
+          [
+            "50"
+          ]
+        ],
+        [
+          "KindCd",
+          [
+            "1",
+            "2",
+            "51"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.0005288678171546338,
+        0.007492294076357311,
+        "독수리"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        4,
+        36
+      ],
+      "name": "계약의 철퇴",
+      "level": 85,
+      "base_stats": {
+        "power": 210,
+        "powerMin": 192,
+        "optionRanges": [
+          [
+            10,
+            15
+          ],
+          [
+            10,
+            15
+          ],
+          [
+            10,
+            15
+          ],
+          [
+            10,
+            15
+          ],
+          [
+            10,
+            15
+          ]
+        ],
+        "refineMax": 50,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "악의 중 둔기강타    사용 가능,        둔기강타 피해 +10%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Dmg",
+          [
+            "1",
+            "5",
+            "5",
+            "26"
+          ]
+        ],
+        [
+          "DemonSlam",
+          []
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": false,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.0005288678171546338,
+        0.007492294076357311,
+        "독수리"
+      ],
+      "assessment": "악의 중 둔기강타의 추가 행동 이점 별도 실측 필요."
+    },
+    {
+      "key": [
+        5,
+        28
+      ],
+      "name": "용암군주의 투구",
+      "level": 85,
+      "base_stats": {
+        "power": 46,
+        "armourClass": "중갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "받는 피해 -15%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Taken",
+          [
+            "218"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.00039665086286597536,
+        0.0037461470381786556,
+        "천둥새"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        5,
+        29
+      ],
+      "name": "그림자 사냥꾼의 두건",
+      "level": 85,
+      "base_stats": {
+        "power": 44,
+        "armourClass": "경갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "치명 +10%P       기본공격 피해 +20%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Crit",
+          [
+            "10"
+          ]
+        ],
+        [
+          "Basic",
+          [
+            "51"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.00039665086286597536,
+        0.0037461470381786556,
+        "천둥새"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        5,
+        30
+      ],
+      "name": "빙해왕의 투구",
+      "level": 85,
+      "base_stats": {
+        "power": 46,
+        "armourClass": "중갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "최대 HP +15%     받는 피해의 10%    반사",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "MaxHp",
+          [
+            "38"
+          ]
+        ],
+        [
+          "Reflect",
+          [
+            "26"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": false,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.00039665086286597536,
+        0.0037461470381786556,
+        "천둥새"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        5,
+        31
+      ],
+      "name": "바람술사의 머리띠",
+      "level": 85,
+      "base_stats": {
+        "power": 44,
+        "armourClass": "경갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "스킬 SP 소모 -10% 스킬 쿨타임 -10%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "SpCost",
+          [
+            "230"
+          ]
+        ],
+        [
+          "AllCd",
+          [
+            "26"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.00039665086286597536,
+        0.0037461470381786556,
+        "천둥새"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        5,
+        32
+      ],
+      "name": "분노의 투구",
+      "level": 85,
+      "base_stats": {
+        "power": 46,
+        "armourClass": "중갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "격분 중 타격마다    격분 +0.25초",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "FuryHit",
+          [
+            "5"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0001542531133367682,
+        0.0018730735190893278,
+        "천둥새"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        5,
+        33
+      ],
+      "name": "도발자의 투구",
+      "level": 85,
+      "base_stats": {
+        "power": 46,
+        "armourClass": "중갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "반격태세 유지,     도발 중 받는 피해   -10%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "TauntTaken",
+          [
+            "230"
+          ]
+        ],
+        [
+          "StanceHold",
+          []
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0001542531133367682,
+        0.0018730735190893278,
+        "천둥새"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        5,
+        34
+      ],
+      "name": "집중의 관",
+      "level": 85,
+      "base_stats": {
+        "power": 44,
+        "armourClass": "경갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "스킬 SP 소모 -15%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "SpCost",
+          [
+            "218"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.0001542531133367682,
+        0.0018730735190893278,
+        "천둥새"
+      ],
+      "assessment": "역할 협소: 바람정령의 머리띠와 같은 기본 능력치. SP 5%p 추가 절약 대신 쿨감 10% 포기; SP 제한 회전에서 확인 필요."
+    },
+    {
+      "key": [
+        5,
+        35
+      ],
+      "name": "뒤틀린 뿔",
+      "level": 85,
+      "base_stats": {
+        "power": 44,
+        "armourClass": "경갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "악의 지속 75초",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "DemonDur",
+          [
+            "15"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0001542531133367682,
+        0.0018730735190893278,
+        "천둥새"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        5,
+        36
+      ],
+      "name": "무희의 두건",
+      "level": 85,
+      "base_stats": {
+        "power": 44,
+        "armourClass": "경갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "살상연희 피해 +40%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Dmg",
+          [
+            "2",
+            "10",
+            "10",
+            "102"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0001542531133367682,
+        0.0018730735190893278,
+        "천둥새"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        5,
+        37
+      ],
+      "name": "검귀의 투구",
+      "level": 85,
+      "base_stats": {
+        "power": 46,
+        "armourClass": "중갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "발도 피해 +50%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Dmg",
+          [
+            "1",
+            "9",
+            "9",
+            "128"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0001542531133367682,
+        0.0018730735190893278,
+        "천둥새"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        5,
+        38
+      ],
+      "name": "검성의 투구",
+      "level": 85,
+      "base_stats": {
+        "power": 46,
+        "armourClass": "중갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "검기 피해 +50%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Dmg",
+          [
+            "1",
+            "4",
+            "4",
+            "128"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0001542531133367682,
+        0.0018730735190893278,
+        "천둥새"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        5,
+        39
+      ],
+      "name": "성벽의 투구",
+      "level": 85,
+      "base_stats": {
+        "power": 46,
+        "armourClass": "중갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "방패치기 피해 +50% 최대 HP +20%     방어확률 +8%P",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Dmg",
+          [
+            "1",
+            "6",
+            "6",
+            "128"
+          ]
+        ],
+        [
+          "MaxHp",
+          [
+            "51"
+          ]
+        ],
+        [
+          "Guard",
+          [
+            "8"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0001542531133367682,
+        0.0018730735190893278,
+        "천둥새"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        6,
+        51
+      ],
+      "name": "불굴의 흉갑",
+      "level": 85,
+      "base_stats": {
+        "power": 75,
+        "armourClass": "중갑",
+        "optionRanges": [
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ]
+        ],
+        "refineMax": 25,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "최대 HP +40%     받는 피해 -15%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "MaxHp",
+          [
+            "102"
+          ]
+        ],
+        [
+          "Taken",
+          [
+            "218"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": false,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.0002644339085773169,
+        0.0037461470381786556,
+        "인페르널"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        6,
+        52
+      ],
+      "name": "밤까마귀 가죽갑옷",
+      "level": 85,
+      "base_stats": {
+        "power": 68,
+        "armourClass": "경갑",
+        "optionRanges": [
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ]
+        ],
+        "refineMax": 20,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "회피 +5%P        민첩 +50",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Evade",
+          [
+            "5"
+          ]
+        ],
+        [
+          "Ability",
+          [
+            "2",
+            "50"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0002644339085773169,
+        0.0037461470381786556,
+        "인페르널"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        6,
+        53
+      ],
+      "name": "심연의 판금갑옷",
+      "level": 85,
+      "base_stats": {
+        "power": 75,
+        "armourClass": "중갑",
+        "optionRanges": [
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ]
+        ],
+        "refineMax": 25,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "받는 피해 -25%    최대 HP +20%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Taken",
+          [
+            "192"
+          ]
+        ],
+        [
+          "MaxHp",
+          [
+            "51"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0002644339085773169,
+        0.0037461470381786556,
+        "인페르널"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        6,
+        54
+      ],
+      "name": "서리늑대 가죽옷",
+      "level": 85,
+      "base_stats": {
+        "power": 68,
+        "armourClass": "경갑",
+        "optionRanges": [
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ]
+        ],
+        "refineMax": 20,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "최대 SP +10%     의지 +50",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "MaxSp",
+          [
+            "26"
+          ]
+        ],
+        [
+          "Ability",
+          [
+            "3",
+            "50"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": false,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.0002644339085773169,
+        0.0037461470381786556,
+        "인페르널"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        6,
+        55
+      ],
+      "name": "상처의 갑주",
+      "level": 85,
+      "base_stats": {
+        "power": 75,
+        "armourClass": "중갑",
+        "optionRanges": [
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ]
+        ],
+        "refineMax": 25,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "격분 중 처치 +1초, 맞으면 +0.3초,    받는 피해 -15%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "FuryKill",
+          [
+            "20"
+          ]
+        ],
+        [
+          "FuryHurt",
+          [
+            "6"
+          ]
+        ],
+        [
+          "FuryTaken",
+          [
+            "218"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.00010577356343092674,
+        0.0014984588152714621,
+        "크리스탈골렘"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        6,
+        56
+      ],
+      "name": "가시 판금",
+      "level": 85,
+      "base_stats": {
+        "power": 75,
+        "armourClass": "중갑",
+        "optionRanges": [
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ]
+        ],
+        "refineMax": 25,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "반격태세 중        받는 피해 -25%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "StanceTaken",
+          [
+            "192"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.00010577356343092674,
+        0.0014984588152714621,
+        "크리스탈골렘"
+      ],
+      "assessment": "확정 열세: 심연의 판금갑옷과 같은 기본 능력치. 반격 중에만 피해 -25%; 심연은 상시 -25%와 HP +20%."
+    },
+    {
+      "key": [
+        6,
+        57
+      ],
+      "name": "시간의 외투",
+      "level": 85,
+      "base_stats": {
+        "power": 68,
+        "armourClass": "경갑",
+        "optionRanges": [
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ]
+        ],
+        "refineMax": 20,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "스킬 쿨타임 -15%   (각성기 포함)",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "AllCd",
+          [
+            "38"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.00010577356343092674,
+        0.0014984588152714621,
+        "크리스탈골렘"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        6,
+        58
+      ],
+      "name": "검은 비늘",
+      "level": 85,
+      "base_stats": {
+        "power": 68,
+        "armourClass": "경갑",
+        "optionRanges": [
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ]
+        ],
+        "refineMax": 20,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "기본공격 피해 +30%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Basic",
+          [
+            "77"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.00010577356343092674,
+        0.0014984588152714621,
+        "크리스탈골렘"
+      ],
+      "assessment": "중력 대비 평타 피해 열세: 같은 경갑 기본 능력치. 38개부터 중력의 최종 피해 증가가 기본공격 +30%를 넘음."
+    },
+    {
+      "key": [
+        6,
+        59
+      ],
+      "name": "무희의 옷",
+      "level": 85,
+      "base_stats": {
+        "power": 68,
+        "armourClass": "경갑",
+        "optionRanges": [
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ]
+        ],
+        "refineMax": 20,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "살상연희 피해 +50%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Dmg",
+          [
+            "2",
+            "10",
+            "10",
+            "128"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.00010577356343092674,
+        0.0014984588152714621,
+        "크리스탈골렘"
+      ],
+      "assessment": "중력 대비 특화 피해 열세 위험: 같은 경갑 기본 능력치. 다른 살상연희 가산 보너스가 없을 때 63개부터 중력이 +50%를 넘음."
+    },
+    {
+      "key": [
+        6,
+        60
+      ],
+      "name": "중력의 갑주",
+      "level": 85,
+      "base_stats": {
+        "power": 68,
+        "armourClass": "경갑",
+        "optionRanges": [
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ]
+        ],
+        "refineMax": 20,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "장비 1개당        주는 피해 +0.8%   (가방 + 입은 장비)",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Gravity",
+          [
+            "8"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": false,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.00010577356343092674,
+        0.0014984588152714621,
+        "크리스탈골렘"
+      ],
+      "assessment": "강한 범용 우위 위험: 장비 수×0.8%를 최종 피해에 곱함. 47개 약 +37.5%, 127개 약 +101.56%."
+    },
+    {
+      "key": [
+        6,
+        61
+      ],
+      "name": "납도의 갑옷",
+      "level": 85,
+      "base_stats": {
+        "power": 75,
+        "armourClass": "중갑",
+        "optionRanges": [
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ]
+        ],
+        "refineMax": 25,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "발도 SP -20%,    발도 쿨타임 -20%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "KindSp",
+          [
+            "1",
+            "9",
+            "51"
+          ]
+        ],
+        [
+          "KindCd",
+          [
+            "1",
+            "6",
+            "51"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.00010577356343092674,
+        0.0014984588152714621,
+        "크리스탈골렘"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        6,
+        62
+      ],
+      "name": "검성의 흉갑",
+      "level": 85,
+      "base_stats": {
+        "power": 75,
+        "armourClass": "중갑",
+        "optionRanges": [
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ]
+        ],
+        "refineMax": 25,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "검기 피해 +70%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Dmg",
+          [
+            "1",
+            "4",
+            "4",
+            "179"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.00010577356343092674,
+        0.0014984588152714621,
+        "크리스탈골렘"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        6,
+        63
+      ],
+      "name": "검귀의 흉갑",
+      "level": 85,
+      "base_stats": {
+        "power": 75,
+        "armourClass": "중갑",
+        "optionRanges": [
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ]
+        ],
+        "refineMax": 25,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "발도 피해 +70%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Dmg",
+          [
+            "1",
+            "9",
+            "9",
+            "179"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.00010577356343092674,
+        0.0014984588152714621,
+        "크리스탈골렘"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        6,
+        64
+      ],
+      "name": "성벽의 흉갑",
+      "level": 85,
+      "base_stats": {
+        "power": 75,
+        "armourClass": "중갑",
+        "optionRanges": [
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            9,
+            15
+          ]
+        ],
+        "refineMax": 25,
+        "slots": 2,
+        "reqHonor": 0
+      },
+      "asset_description": "방패치기 피해 +70% 최대 HP +30%     방어확률 +12%P",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Dmg",
+          [
+            "1",
+            "6",
+            "6",
+            "179"
+          ]
+        ],
+        [
+          "MaxHp",
+          [
+            "77"
+          ]
+        ],
+        [
+          "Guard",
+          [
+            "12"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.00010577356343092674,
+        0.0014984588152714621,
+        "크리스탈골렘"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        8,
+        51
+      ],
+      "name": "거인의 건틀릿",
+      "level": 85,
+      "base_stats": {
+        "power": 41,
+        "armourClass": "중갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "기본공격 피해 +35% 받는 피해 -8%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Basic",
+          [
+            "90"
+          ]
+        ],
+        [
+          "Taken",
+          [
+            "235"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": false,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.0003525785447697559,
+        0.0037461470381786556,
+        "말벌떼"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        8,
+        52
+      ],
+      "name": "독사의 장갑",
+      "level": 85,
+      "base_stats": {
+        "power": 36,
+        "armourClass": "경갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "기본공격 피해 +50%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Basic",
+          [
+            "128"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0003525785447697559,
+        0.0037461470381786556,
+        "말벌떼"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        8,
+        53
+      ],
+      "name": "파쇄자의 손갑",
+      "level": 85,
+      "base_stats": {
+        "power": 41,
+        "armourClass": "중갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "폭풍강타, 둔기강타  피해 +25%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Dmg",
+          [
+            "0",
+            "9",
+            "9",
+            "64"
+          ]
+        ],
+        [
+          "Dmg",
+          [
+            "1",
+            "5",
+            "5",
+            "64"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0003525785447697559,
+        0.0037461470381786556,
+        "말벌떼"
+      ],
+      "assessment": "특화 효율 낮음 후보: 연환 대비 해당 스킬 +5%p와 방어 +5, 대신 다른 직업 스킬 +20% 포기. 엄밀한 하위호환은 아님."
+    },
+    {
+      "key": [
+        8,
+        54
+      ],
+      "name": "질풍의 손목보호대",
+      "level": 85,
+      "base_stats": {
+        "power": 36,
+        "armourClass": "경갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "처치시 SP 10% 회복 스킬 SP 소모 -20%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "HealSp",
+          [
+            "26"
+          ]
+        ],
+        [
+          "SpCost",
+          [
+            "205"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.0003525785447697559,
+        0.0037461470381786556,
+        "말벌떼"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        8,
+        55
+      ],
+      "name": "되갚는 손",
+      "level": 85,
+      "base_stats": {
+        "power": 41,
+        "armourClass": "중갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "반격 피해 +30%,   반격 피해의 6%     HP 회복",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Counter",
+          [
+            "77"
+          ]
+        ],
+        [
+          "CounterLeech",
+          [
+            "15"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0001542531133367682,
+        0.0018730735190893278,
+        "말벌떼"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        8,
+        56
+      ],
+      "name": "연환의 장갑",
+      "level": 85,
+      "base_stats": {
+        "power": 36,
+        "armourClass": "경갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "직업 스킬 피해     +20%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Skills",
+          [
+            "51"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.0001542531133367682,
+        0.0018730735190893278,
+        "말벌떼"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        8,
+        57
+      ],
+      "name": "악마의 손톱",
+      "level": 85,
+      "base_stats": {
+        "power": 36,
+        "armourClass": "경갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "기본공격 속도 +20% 기본공격 피해 +20%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "BasicFast",
+          [
+            "20"
+          ]
+        ],
+        [
+          "Basic",
+          [
+            "51"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0001542531133367682,
+        0.0018730735190893278,
+        "말벌떼"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        8,
+        58
+      ],
+      "name": "칼춤 장갑",
+      "level": 85,
+      "base_stats": {
+        "power": 36,
+        "armourClass": "경갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "살상연희 피해 +40%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Dmg",
+          [
+            "2",
+            "10",
+            "10",
+            "102"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0001542531133367682,
+        0.0018730735190893278,
+        "말벌떼"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        8,
+        59
+      ],
+      "name": "소드마스터의수련장갑",
+      "level": 85,
+      "base_stats": {
+        "power": 41,
+        "armourClass": "중갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "검기 피해 +30%,   검기 SP -50%,    사거리 +2칸",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Dmg",
+          [
+            "1",
+            "4",
+            "4",
+            "77"
+          ]
+        ],
+        [
+          "KindSp",
+          [
+            "1",
+            "4",
+            "128"
+          ]
+        ],
+        [
+          "Range",
+          [
+            "GearPatch::RANGE_LOBE"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0001542531133367682,
+        0.0018730735190893278,
+        "말벌떼"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        8,
+        60
+      ],
+      "name": "원월의 장갑",
+      "level": 85,
+      "base_stats": {
+        "power": 41,
+        "armourClass": "중갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "발도 범위 +1칸,    발도 피해 +30%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "IaidoReach",
+          [
+            "1"
+          ]
+        ],
+        [
+          "Dmg",
+          [
+            "1",
+            "9",
+            "9",
+            "77"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0001542531133367682,
+        0.0018730735190893278,
+        "말벌떼"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        8,
+        61
+      ],
+      "name": "납도의 장갑",
+      "level": 85,
+      "base_stats": {
+        "power": 41,
+        "armourClass": "중갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "발도 SP -20%,    발도 쿨타임 -20%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "KindSp",
+          [
+            "1",
+            "9",
+            "51"
+          ]
+        ],
+        [
+          "KindCd",
+          [
+            "1",
+            "6",
+            "51"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0001542531133367682,
+        0.0018730735190893278,
+        "말벌떼"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        8,
+        62
+      ],
+      "name": "성벽의 건틀릿",
+      "level": 85,
+      "base_stats": {
+        "power": 41,
+        "armourClass": "중갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "방패치기 피해 +30% 최대 HP +10%     방어확률 +4%P",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Dmg",
+          [
+            "1",
+            "6",
+            "6",
+            "77"
+          ]
+        ],
+        [
+          "MaxHp",
+          [
+            "26"
+          ]
+        ],
+        [
+          "Guard",
+          [
+            "4"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0001542531133367682,
+        0.0018730735190893278,
+        "말벌떼"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        9,
+        51
+      ],
+      "name": "산맥의 철각",
+      "level": 85,
+      "base_stats": {
+        "power": 46,
+        "armourClass": "중갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "야수 스킬 쿨타임    -20%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "BeastCd",
+          [
+            "205"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.0003085062266735364,
+        0.0037461470381786556,
+        "피닉스"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        9,
+        52
+      ],
+      "name": "그림자 걸음",
+      "level": 85,
+      "base_stats": {
+        "power": 40,
+        "armourClass": "경갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "일격, 일섬 피해    +100%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Dmg",
+          [
+            "2",
+            "5",
+            "5",
+            "256"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0003085062266735364,
+        0.0037461470381786556,
+        "피닉스"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        9,
+        53
+      ],
+      "name": "진군의 철화",
+      "level": 85,
+      "base_stats": {
+        "power": 46,
+        "armourClass": "중갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "기본공격 피해의     15% HP 회복      받는 피해 -8%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Lifesteal",
+          [
+            "38"
+          ]
+        ],
+        [
+          "Taken",
+          [
+            "235"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": false,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.0003085062266735364,
+        0.0037461470381786556,
+        "피닉스"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        9,
+        54
+      ],
+      "name": "비호의 장화",
+      "level": 85,
+      "base_stats": {
+        "power": 40,
+        "armourClass": "경갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "기본공격 피해의     20% HP 회복",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Lifesteal",
+          [
+            "51"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0003085062266735364,
+        0.0037461470381786556,
+        "피닉스"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        9,
+        55
+      ],
+      "name": "광전사의 발걸음",
+      "level": 85,
+      "base_stats": {
+        "power": 46,
+        "armourClass": "중갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "격분 중 타격마다    격분 +0.15초",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "FuryHit",
+          [
+            "3"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.00011218408242674049,
+        0.0013622352866104201,
+        "엘더 피닉스"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        9,
+        56
+      ],
+      "name": "울림의 장화",
+      "level": 85,
+      "base_stats": {
+        "power": 46,
+        "armourClass": "중갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "반격이 주변 적에게  25% 퍼진다",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "CounterSplash",
+          [
+            "64"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.00011218408242674049,
+        0.0013622352866104201,
+        "엘더 피닉스"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        9,
+        57
+      ],
+      "name": "흐름의 장화",
+      "level": 85,
+      "base_stats": {
+        "power": 40,
+        "armourClass": "경갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "기본공격 SP 획득   +50%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "ComboSp",
+          [
+            "128"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.00011218408242674049,
+        0.0013622352866104201,
+        "엘더 피닉스"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        9,
+        58
+      ],
+      "name": "지옥 발굽",
+      "level": 85,
+      "base_stats": {
+        "power": 40,
+        "armourClass": "경갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "이동속도 +25%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Walk",
+          [
+            "25"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.00011218408242674049,
+        0.0013622352866104201,
+        "엘더 피닉스"
+      ],
+      "assessment": "이동용. 고정 위치 DPS로 가치를 판정하면 안 됨."
+    },
+    {
+      "key": [
+        9,
+        59
+      ],
+      "name": "잔영의 신",
+      "level": 85,
+      "base_stats": {
+        "power": 40,
+        "armourClass": "경갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "살상연희 피해 +40%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Dmg",
+          [
+            "2",
+            "10",
+            "10",
+            "102"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.00011218408242674049,
+        0.0013622352866104201,
+        "엘더 피닉스"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        9,
+        60
+      ],
+      "name": "바람날개 신발",
+      "level": 85,
+      "base_stats": {
+        "power": 40,
+        "armourClass": "경갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "일풍격 범위 3칸,   일풍격 피해 +30%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Dmg",
+          [
+            "2",
+            "15",
+            "15",
+            "77"
+          ]
+        ],
+        [
+          "Range",
+          [
+            "GearPatch::RANGE_DAGGER3"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.00011218408242674049,
+        0.0013622352866104201,
+        "엘더 피닉스"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        9,
+        61
+      ],
+      "name": "술꾼의 장화",
+      "level": 85,
+      "base_stats": {
+        "power": 40,
+        "armourClass": "경갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "포션을 마시면      10초간 이동속도    +50%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Drunk",
+          [
+            "GearPatch::DRUNK_FRAMES"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": false,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.00011218408242674049,
+        0.0013622352866104201,
+        "엘더 피닉스"
+      ],
+      "assessment": "포션/이동용. 포션 없는 고정 위치 DPS로 가치를 판정하면 안 됨."
+    },
+    {
+      "key": [
+        9,
+        62
+      ],
+      "name": "스프링 부츠",
+      "level": 85,
+      "base_stats": {
+        "power": 46,
+        "armourClass": "중갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "둔기강타 범위 +50% 둔기강타 피해 +30%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "BluntReach",
+          [
+            "50"
+          ]
+        ],
+        [
+          "Dmg",
+          [
+            "1",
+            "5",
+            "5",
+            "77"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.00011218408242674049,
+        0.0013622352866104201,
+        "엘더 피닉스"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        9,
+        63
+      ],
+      "name": "검성의 철화",
+      "level": 85,
+      "base_stats": {
+        "power": 46,
+        "armourClass": "중갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "검기 피해 +40%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Dmg",
+          [
+            "1",
+            "4",
+            "4",
+            "102"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.00011218408242674049,
+        0.0013622352866104201,
+        "엘더 피닉스"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        9,
+        64
+      ],
+      "name": "검귀의 철화",
+      "level": 85,
+      "base_stats": {
+        "power": 46,
+        "armourClass": "중갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "발도 피해 +40%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Dmg",
+          [
+            "1",
+            "9",
+            "9",
+            "102"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.00011218408242674049,
+        0.0013622352866104201,
+        "엘더 피닉스"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        9,
+        65
+      ],
+      "name": "성벽의 철화",
+      "level": 85,
+      "base_stats": {
+        "power": 46,
+        "armourClass": "중갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 0,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "방패치기 피해 +40% 최대 HP +15%     방어확률 +6%P",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Dmg",
+          [
+            "1",
+            "6",
+            "6",
+            "102"
+          ]
+        ],
+        [
+          "MaxHp",
+          [
+            "38"
+          ]
+        ],
+        [
+          "Guard",
+          [
+            "6"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.00011218408242674049,
+        0.0013622352866104201,
+        "엘더 피닉스"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        10,
+        28
+      ],
+      "name": "성채의 방패",
+      "level": 85,
+      "base_stats": {
+        "power": 49,
+        "armourClass": "중갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 25,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "최대 HP +20%     방어확률 +10%P",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "MaxHp",
+          [
+            "51"
+          ]
+        ],
+        [
+          "Guard",
+          [
+            "10"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0006170124533470728,
+        0.007492294076357311,
+        "제국정예병"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        10,
+        29
+      ],
+      "name": "격돌의 방패",
+      "level": 85,
+      "base_stats": {
+        "power": 49,
+        "armourClass": "중갑",
+        "optionRanges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "refineMax": 25,
+        "slots": 1,
+        "reqHonor": 0
+      },
+      "asset_description": "방패치기 피해 +50%",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "Dmg",
+          [
+            "1",
+            "6",
+            "6",
+            "128"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0006170124533470728,
+        0.007492294076357311,
+        "제국정예병"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        11,
+        20
+      ],
+      "name": "용의 심장",
+      "level": 85,
+      "base_stats": {
+        "optionRanges": [
+          [
+            0,
+            0
+          ],
+          [
+            30,
+            30
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "atk": [
+          0,
+          0
+        ],
+        "def": [
+          0,
+          0
+        ],
+        "hp": [
+          250,
+          250
+        ],
+        "sp": [
+          0,
+          0
+        ]
+      },
+      "asset_description": "받는 피해 -5%,    처치 시 1%로 1분간 받는 피해 -10%,   체력+30, HP+250",
+      "source_description_matches_asset": null,
+      "effects": [
+        [
+          "Taken",
+          [
+            "243"
+          ]
+        ],
+        [
+          "DragonProc",
+          [
+            "1"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.00204833054777134,
+        0.004974517044587542,
+        "갈색곰"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        11,
+        21
+      ],
+      "name": "피의 서약",
+      "level": 85,
+      "base_stats": {
+        "optionRanges": [
+          [
+            0,
+            0
+          ],
+          [
+            30,
+            30
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "atk": [
+          0,
+          0
+        ],
+        "def": [
+          0,
+          0
+        ],
+        "hp": [
+          250,
+          250
+        ],
+        "sp": [
+          0,
+          0
+        ]
+      },
+      "asset_description": "반격 피해의 6%     HP 회복,         체력+30, HP+250",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "CounterLeech",
+          [
+            "15"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.0007051570895395117,
+        0.007492294076357311,
+        "제국정예병"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        11,
+        22
+      ],
+      "name": "풀린 목줄",
+      "level": 85,
+      "base_stats": {
+        "optionRanges": [
+          [
+            0,
+            0
+          ],
+          [
+            30,
+            30
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "atk": [
+          0,
+          0
+        ],
+        "def": [
+          0,
+          0
+        ],
+        "hp": [
+          250,
+          250
+        ],
+        "sp": [
+          0,
+          0
+        ]
+      },
+      "asset_description": "악의 중 받는 피해   -10%, 처치마다    +1초,            체력+30, HP+250",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "DemonTaken",
+          [
+            "230"
+          ]
+        ],
+        [
+          "DemonKill",
+          [
+            "20"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": false,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.0007051570895395117,
+        0.007492294076357311,
+        "제국정예병"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        12,
+        20
+      ],
+      "name": "현자의 인장",
+      "level": 85,
+      "base_stats": {
+        "optionRanges": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            30,
+            30
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "atk": [
+          0,
+          0
+        ],
+        "def": [
+          0,
+          0
+        ],
+        "hp": [
+          0,
+          0
+        ],
+        "sp": [
+          150,
+          150
+        ]
+      },
+      "asset_description": "스킬 SP소모 -15%, 타격 시 1%로 모든  스킬 쿨타임 초기화, 의지+30, SP+150",
+      "source_description_matches_asset": null,
+      "effects": [
+        [
+          "SpCost",
+          [
+            "218"
+          ]
+        ],
+        [
+          "ResetProc",
+          [
+            "1"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": false,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.001199736463694642,
+        0.002487258522293771,
+        "흑곰"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        12,
+        21
+      ],
+      "name": "생명의 서약",
+      "level": 85,
+      "base_stats": {
+        "optionRanges": [
+          [
+            10,
+            10
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            15,
+            15
+          ]
+        ],
+        "atk": [
+          0,
+          0
+        ],
+        "def": [
+          10,
+          10
+        ],
+        "hp": [
+          100,
+          100
+        ],
+        "sp": [
+          100,
+          100
+        ]
+      },
+      "asset_description": "최대 HP +10%,    힘+10, 지력+15,   방어+10, HP+100, SP+100",
+      "source_description_matches_asset": null,
+      "effects": [
+        [
+          "MaxHp",
+          [
+            "26"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": false,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.001199736463694642,
+        0.002487258522293771,
+        "흑곰"
+      ],
+      "assessment": "소량 HP·힘·지력의 혼합 장신구. 용의 심장과 기초 능력치가 달라 단순 하위호환으로 판정하지 않음."
+    },
+    {
+      "key": [
+        12,
+        22
+      ],
+      "name": "꺼지지 않는 불씨",
+      "level": 85,
+      "base_stats": {
+        "optionRanges": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            30,
+            30
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "atk": [
+          0,
+          0
+        ],
+        "def": [
+          0,
+          0
+        ],
+        "hp": [
+          0,
+          0
+        ],
+        "sp": [
+          150,
+          150
+        ]
+      },
+      "asset_description": "폭발 뒤 격분 유지,  게이지 90% 남음,   폭발 쿨 10초,     의지+30, SP+150",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "FuryKeep",
+          [
+            "90"
+          ]
+        ],
+        [
+          "FuryCd",
+          [
+            "200"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": true,
+      "guardian_drop_estimate": [
+        0.00035257854476975577,
+        0.0049948627175715405,
+        "붉은사자"
+      ],
+      "assessment": "게이지 90%/폭발 10초 효과는 실제 폭발을 사용하는 회전 필요. 기존 PLANS 공격에는 폭발이 없음."
+    },
+    {
+      "key": [
+        12,
+        23
+      ],
+      "name": "시간도둑",
+      "level": 85,
+      "base_stats": {
+        "optionRanges": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            30,
+            30
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "atk": [
+          0,
+          0
+        ],
+        "def": [
+          0,
+          0
+        ],
+        "hp": [
+          0,
+          0
+        ],
+        "sp": [
+          150,
+          150
+        ]
+      },
+      "asset_description": "기본공격 10회마다   모든 스킬 쿨 -1초  (각성기, 야수 포함) 의지+30, SP+150",
+      "source_description_matches_asset": true,
+      "effects": [
+        [
+          "TimeThief",
+          [
+            "10"
+          ]
+        ]
+      ],
+      "special_handler": null,
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.00035257854476975577,
+        0.0049948627175715405,
+        "붉은사자"
+      ],
+      "assessment": "정적 수치·효과 경로 확인. 개별 성능 합격을 뜻하지 않으며 해당 조건의 실전 비교 필요."
+    },
+    {
+      "key": [
+        12,
+        24
+      ],
+      "name": "마지막 춤",
+      "level": 85,
+      "base_stats": {
+        "optionRanges": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            30,
+            30
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "atk": [
+          0,
+          0
+        ],
+        "def": [
+          0,
+          0
+        ],
+        "hp": [
+          0,
+          0
+        ],
+        "sp": [
+          150,
+          150
+        ]
+      },
+      "asset_description": "살상연희 3타 고정,  살상연희 피해 5배,  의지+30, SP+150",
+      "source_description_matches_asset": true,
+      "effects": [],
+      "special_handler": "RoguePatch::gear_words",
+      "in_existing_model_loadouts": true,
+      "in_existing_probe_loadouts": false,
+      "guardian_drop_estimate": [
+        0.00035257854476975577,
+        0.0049948627175715405,
+        "붉은사자"
+      ],
+      "assessment": "효과 표 밖 RoguePatch 적용. 3타 고정×5이므로 단검 추가 타수와의 상충은 의도된 조합 제약."
+    }
+  ]
+}

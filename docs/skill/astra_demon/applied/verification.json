@@ -1,0 +1,74 @@
+{
+  "scenarios": {
+    "claw": {
+      "LOOK": 1,
+      "HITS": 11,
+      "CASTS": 1
+    },
+    "charge": {
+      "CHARGES": 1,
+      "CHITS": 11,
+      "STEPS": 9
+    },
+    "follow": {
+      "FGAUGE": 100,
+      "BLASTS": 1,
+      "BLDMG": 2907
+    },
+    "blade": {
+      "BLADE": 1,
+      "BHITS": 374
+    },
+    "judge": {
+      "JUDGE": 1,
+      "JHITS": 172
+    },
+    "fire": {
+      "FIRES": 1,
+      "FIRE_HITS": 4
+    },
+    "lava": {
+      "LAVAS": 12,
+      "LHITS": 16,
+      "LLIVE": 1
+    }
+  },
+  "artifacts": {
+    "wie_android/src/demon_fx.bin": {
+      "bytes": 1109233,
+      "sha256": "affd45c5c67b72dcec535ef942ec4b8f643f06d4a6189e5a533994001860020e"
+    },
+    "android_app/app/src/main/assets/hero2_ktf.zip": {
+      "bytes": 1030738,
+      "sha256": "8c188933ab37d5360710b70328b562f332f6f11b5e6b8d26f26869f10c830bbc"
+    },
+    "wie_android/src/icons.bin": {
+      "bytes": 67042,
+      "sha256": "4680cbf74d2e154b821f600db1f296a617fa11ce1da37264ecac6a9a57a2b701"
+    }
+  },
+  "apk": {
+    "path": "dist\\hero2_ktf1.07_0.110.0.apk",
+    "versionCode": 110,
+    "bytes": 30377224,
+    "sha256": "a79eb2daa4540877d8ad8f9e4c65b0693a6ceda87c1ffd507465c9335b25213e",
+    "signature": "release hero2 verified by build script",
+    "gameZipMatches": true,
+    "fxBinaryEmbeddedIn": [
+      "lib/arm64-v8a/libmain.so"
+    ],
+    "deviceInstalled": true,
+    "deviceModel": "SM_S938N",
+    "installedVersionCode": 110,
+    "firstInstallTime": "2026-09-25 03:19:42",
+    "lastUpdateTime": "2026-10-14 11:31:57"
+  },
+  "checks": {
+    "python": 9,
+    "hero2java": 309,
+    "anchors": 79,
+    "backend": 61,
+    "vendorClippy": "passed with existing warnings",
+    "format": "task vendor files formatted; unrelated baseline differences preserved"
+  }
+}

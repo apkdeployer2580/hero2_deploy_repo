@@ -1,0 +1,49 @@
+{
+  "tool": "image_gen.imagegen",
+  "mode": "built-in",
+  "date": "2026-10-13",
+  "requests": [
+    {
+      "board": "01",
+      "referenced_image_paths": [
+        "C:\\hero2NativeAPP\\docs\\skill\\astra_demon\\references\\contact_06.jpg",
+        "C:\\hero2NativeAPP\\docs\\skill\\astra_demon\\references\\contact_01.jpg",
+        "C:\\hero2NativeAPP\\docs\\skill\\demon_fx_draft\\sheet.png"
+      ],
+      "transparent_background": false,
+      "prompt_file": "01.txt"
+    },
+    {
+      "board": "02",
+      "referenced_image_paths": [
+        "C:\\hero2NativeAPP\\docs\\skill\\astra_demon\\boards\\01_awakening.png",
+        "C:\\hero2NativeAPP\\docs\\skill\\astra_demon\\references\\contact_02.jpg",
+        "C:\\hero2NativeAPP\\docs\\skill\\astra_demon\\references\\contact_03.jpg",
+        "C:\\hero2NativeAPP\\docs\\skill\\astra_demon\\references\\contact_05.jpg"
+      ],
+      "transparent_background": false,
+      "prompt_file": "02.txt"
+    },
+    {
+      "board": "03",
+      "referenced_image_paths": [
+        "C:\\hero2NativeAPP\\docs\\skill\\astra_demon\\boards\\01_awakening.png",
+        "C:\\hero2NativeAPP\\docs\\skill\\astra_demon\\references\\contact_04.jpg",
+        "C:\\hero2NativeAPP\\docs\\skill\\astra_demon\\references\\contact_05.jpg"
+      ],
+      "transparent_background": false,
+      "prompt_file": "03.txt"
+    },
+    {
+      "board": "04",
+      "referenced_image_paths": [
+        "C:\\hero2NativeAPP\\docs\\skill\\astra_demon\\boards\\01_awakening.png",
+        "C:\\hero2NativeAPP\\docs\\skill\\astra_demon\\references\\contact_01.jpg",
+        "C:\\hero2NativeAPP\\docs\\skill\\astra_demon\\references\\contact_02.jpg",
+        "C:\\hero2NativeAPP\\docs\\skill\\astra_demon\\references\\contact_03.jpg"
+      ],
+      "transparent_background": false,
+      "prompt_file": "04.txt"
+    }
+  ]
+}

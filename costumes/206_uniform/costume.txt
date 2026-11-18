@@ -1,0 +1,9 @@
+# 의상 206 — 「제복」 (Claude 초안 2026-10-08, tools_re/costume_draft_uniform.py) — 가디언 모드 클리어 보상 (난이도 EASY 이상,
+# avatar_state::CLEAR_REWARDS). 적갈 군복 상의 · 금 견장과 단추 · 검은 챙모자(붉은 띠) · 검은 바지와 장화 · 흰 장갑.
+set         = 제복
+head        = 제복 모자
+head.desc   = 붉은 띠의 검은 챙모자
+armor       = 제복 상의
+armor.desc  = 금 견장의 적갈색 군복
+shoes       = 제복 바지
+shoes.desc  = 검은 바지와 장화

@@ -1,0 +1,18 @@
+# 의상 207 — 「진홍의 검사」 (Claude 초안 2026-10-09, tools_re/costume_draft_crimson.py) — 가디언 모드 클리어 보상 (난이도 EASY 이상,
+# avatar_state::CLEAR_REWARDS). 사용자가 준 그림 1: 붉은 긴 머리와 금관 · 해골 견갑 · 붉은 안감의 검은 롱코트 · 검은 스타킹 · 붉은 태도.
+# 이름은 Claude 가 정했다(확인 대기). 나이트 방패는 없다(그림에 없다).
+set                   = 진홍의 검사
+head                  = 진홍의 검사-머리
+head.desc             = 금관을 쓴 붉은 긴 머리
+armor                 = 진홍의 검사-코트
+armor.desc            = 붉은 안감의 검은 롱코트
+shoes                 = 진홍의 검사-스타킹
+shoes.desc            = 검은 스타킹과 하이힐
+weapon.berserker      = 진홍의 검사-붉은 대도
+weapon.berserker.desc = 핏빛으로 물든 큰 태도
+weapon.knight         = 진홍의 검사-붉은 태도
+weapon.knight.desc    = 핏빛으로 물든 긴 태도
+weapon.rogue          = 진홍의 검사-붉은 단도
+weapon.rogue.desc     = 오른손에 쥐는 붉은 단도
+offhand.rogue         = 진홍의 검사-붉은 단도
+offhand.rogue.desc    = 왼손에 쥐는 붉은 단도

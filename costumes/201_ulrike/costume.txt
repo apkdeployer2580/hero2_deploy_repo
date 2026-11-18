@@ -1,0 +1,8 @@
+# 의상 201 — 「율리케의 드레스코드」 (Claude 초안 2026-10-01, tools_re/costume_draft_ulrike.py)
+set         = 율리케의 드레스코드
+head        = 율리케의 머리
+head.desc   = 율리케의 하얀 면사포
+armor       = 율리케의 웨딩드레스
+armor.desc  = 율리케의 순백 웨딩드레스
+shoes       = 율리케의 구두
+shoes.desc  = 율리케의 새하얀 하이힐

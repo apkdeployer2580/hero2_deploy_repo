@@ -1,0 +1,9 @@
+# 의상 202 — 「클레르의 잠옷」 (Claude 초안 2026-10-01, tools_re/costume_draft_claire.py)
+# ★ 새 게임부터 누구나 가진 기본 아바타 (avatar_state::STARTER_SETS) — 조건 없이, 이미 시작한 캐릭터도 다음 불러오기부터.
+set         = 클레르의 잠옷
+head        = 클레르의 머리
+head.desc   = 클레르 본래의 금발 머리
+armor       = 클레르의 잠옷 상의
+armor.desc  = 클레르가 입는 잠옷 셔츠
+shoes       = 클레르의 잠옷 바지
+shoes.desc  = 클레르가 입는 잠옷 바지
