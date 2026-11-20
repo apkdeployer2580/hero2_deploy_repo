@@ -31,3 +31,19 @@ cargo build --release -p wie_probe
 ./target/release/wie_probe --zip android_app/app/src/main/assets/hero2_ktf.zip \
   --w 176 --h 220 --ms 20 --frames 1200 --keys 320:OK --out /tmp/h2 --dump 560
 ```
+
+<!-- release-section -->
+## 최신 릴리스 (APK)
+
+**[최신 APK 받기 → Releases](https://github.com/apkdeployer2580/hero2_deploy_repo/releases/latest)**
+
+| 판 | 파일 | versionCode |
+|---|---|---|
+| 릴리스 | `hero2_ktf1.07_0.163.0.apk` | 163 |
+
+**이미 설치해서 하던 분 — 세이브를 그대로 이어 하려면**
+
+* 앱을 **지우지 말고** 받은 APK 를 그대로 설치하세요. 업데이트로 덮어 설치되고 세이브가 그대로 남습니다.
+* ⚠ 앱을 지우면 세이브도 함께 지워지고 되살릴 수 없습니다.
+* 「앱이 설치되지 않았습니다」가 뜨면 서명이 다른 APK(예: 이 소스로 직접 빌드한 APK)가 깔려 있는 것입니다. 게임의 환경설정 맨 아래 「세이브내보내기」로 세이브를 파일로 빼 두고, 그 앱을 지운 뒤 새 APK 를 설치해서 「세이브불러오기」로 넣으세요.
+* 공식 APK 의 서명 인증서 SHA-256: `f6ec47cb4717874fe1d16e197763401a67c99e06ed6537b68cff04d46d38e922`
